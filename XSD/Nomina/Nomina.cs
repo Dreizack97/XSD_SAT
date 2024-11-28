@@ -2,281 +2,62 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
-[XmlRootAttribute(Namespace = "http://www.sat.gob.mx/nomina12", IsNullable = false)]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[XmlRoot(Namespace = "http://www.sat.gob.mx/nomina12", IsNullable = false)]
 public partial class Nomina
 {
-    private NominaEmisor emisorField;
-
-    private NominaReceptor receptorField;
-
-    private NominaPercepciones percepcionesField;
-
-    private NominaDeducciones deduccionesField;
-
-    private NominaOtroPago[] otrosPagosField;
-
-    private NominaIncapacidad[] incapacidadesField;
-
-    private string versionField;
-
-    private c_TipoNomina tipoNominaField;
-
-    private System.DateTime fechaPagoField;
-
-    private System.DateTime fechaInicialPagoField;
-
-    private System.DateTime fechaFinalPagoField;
-
-    private decimal numDiasPagadosField;
-
-    private decimal totalPercepcionesField;
-
-    private bool totalPercepcionesFieldSpecified;
-
-    private decimal totalDeduccionesField;
-
-    private bool totalDeduccionesFieldSpecified;
-
-    private decimal totalOtrosPagosField;
-
-    private bool totalOtrosPagosFieldSpecified;
-
     public Nomina()
     {
-        this.versionField = "1.2";
+        this.Version = "1.2";
     }
 
-    public NominaEmisor Emisor
-    {
-        get
-        {
-            return this.emisorField;
-        }
-        set
-        {
-            this.emisorField = value;
-        }
-    }
+    public NominaEmisor Emisor { get; set; }
+    public NominaReceptor Receptor { get; set; }
+    public NominaPercepciones Percepciones { get; set; }
+    public NominaDeducciones Deducciones { get; set; }
 
-    public NominaReceptor Receptor
-    {
-        get
-        {
-            return this.receptorField;
-        }
-        set
-        {
-            this.receptorField = value;
-        }
-    }
+    [XmlArrayItem("OtroPago", IsNullable = false)]
+    public NominaOtroPago[] OtrosPagos { get; set; }
 
-    public NominaPercepciones Percepciones
-    {
-        get
-        {
-            return this.percepcionesField;
-        }
-        set
-        {
-            this.percepcionesField = value;
-        }
-    }
+    [XmlArrayItem("Incapacidad", IsNullable = false)]
+    public NominaIncapacidad[] Incapacidades { get; set; }
 
-    public NominaDeducciones Deducciones
-    {
-        get
-        {
-            return this.deduccionesField;
-        }
-        set
-        {
-            this.deduccionesField = value;
-        }
-    }
+    [XmlAttribute]
+    public string Version { get; set; }
 
-    [XmlArrayItemAttribute("OtroPago", IsNullable = false)]
-    public NominaOtroPago[] OtrosPagos
-    {
-        get
-        {
-            return this.otrosPagosField;
-        }
-        set
-        {
-            this.otrosPagosField = value;
-        }
-    }
+    [XmlAttribute]
+    public c_TipoNomina TipoNomina { get; set; }
 
-    [XmlArrayItemAttribute("Incapacidad", IsNullable = false)]
-    public NominaIncapacidad[] Incapacidades
-    {
-        get
-        {
-            return this.incapacidadesField;
-        }
-        set
-        {
-            this.incapacidadesField = value;
-        }
-    }
+    [XmlAttribute(DataType = "date")]
+    public DateTime FechaPago { get; set; }
 
-    [XmlAttributeAttribute()]
-    public string Version
-    {
-        get
-        {
-            return this.versionField;
-        }
-        set
-        {
-            this.versionField = value;
-        }
-    }
+    [XmlAttribute(DataType = "date")]
+    public DateTime FechaInicialPago { get; set; }
 
-    [XmlAttributeAttribute()]
-    public c_TipoNomina TipoNomina
-    {
-        get
-        {
-            return this.tipoNominaField;
-        }
-        set
-        {
-            this.tipoNominaField = value;
-        }
-    }
+    [XmlAttribute(DataType = "date")]
+    public DateTime FechaFinalPago { get; set; }
 
-    [XmlAttributeAttribute(DataType = "date")]
-    public System.DateTime FechaPago
-    {
-        get
-        {
-            return this.fechaPagoField;
-        }
-        set
-        {
-            this.fechaPagoField = value;
-        }
-    }
+    [XmlAttribute]
+    public decimal NumDiasPagados { get; set; }
 
-    [XmlAttributeAttribute(DataType = "date")]
-    public System.DateTime FechaInicialPago
-    {
-        get
-        {
-            return this.fechaInicialPagoField;
-        }
-        set
-        {
-            this.fechaInicialPagoField = value;
-        }
-    }
+    [XmlAttribute]
+    public decimal TotalPercepciones { get; set; }
 
-    [XmlAttributeAttribute(DataType = "date")]
-    public System.DateTime FechaFinalPago
-    {
-        get
-        {
-            return this.fechaFinalPagoField;
-        }
-        set
-        {
-            this.fechaFinalPagoField = value;
-        }
-    }
+    [XmlIgnore]
+    public bool TotalPercepcionesSpecified { get; set; }
 
-    [XmlAttributeAttribute()]
-    public decimal NumDiasPagados
-    {
-        get
-        {
-            return this.numDiasPagadosField;
-        }
-        set
-        {
-            this.numDiasPagadosField = value;
-        }
-    }
+    [XmlAttribute]
+    public decimal TotalDeducciones { get; set; }
 
-    [XmlAttributeAttribute()]
-    public decimal TotalPercepciones
-    {
-        get
-        {
-            return this.totalPercepcionesField;
-        }
-        set
-        {
-            this.totalPercepcionesField = value;
-        }
-    }
+    [XmlIgnore]
+    public bool TotalDeduccionesSpecified { get; set; }
 
-    [XmlIgnoreAttribute()]
-    public bool TotalPercepcionesSpecified
-    {
-        get
-        {
-            return this.totalPercepcionesFieldSpecified;
-        }
-        set
-        {
-            this.totalPercepcionesFieldSpecified = value;
-        }
-    }
+    [XmlAttribute]
+    public decimal TotalOtrosPagos { get; set; }
 
-    [XmlAttributeAttribute()]
-    public decimal TotalDeducciones
-    {
-        get
-        {
-            return this.totalDeduccionesField;
-        }
-        set
-        {
-            this.totalDeduccionesField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool TotalDeduccionesSpecified
-    {
-        get
-        {
-            return this.totalDeduccionesFieldSpecified;
-        }
-        set
-        {
-            this.totalDeduccionesFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal TotalOtrosPagos
-    {
-        get
-        {
-            return this.totalOtrosPagosField;
-        }
-        set
-        {
-            this.totalOtrosPagosField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool TotalOtrosPagosSpecified
-    {
-        get
-        {
-            return this.totalOtrosPagosFieldSpecified;
-        }
-        set
-        {
-            this.totalOtrosPagosFieldSpecified = value;
-        }
-    }
+    [XmlIgnore]
+    public bool TotalOtrosPagosSpecified { get; set; }
 }

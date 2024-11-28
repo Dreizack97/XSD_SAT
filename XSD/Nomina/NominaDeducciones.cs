@@ -2,84 +2,24 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
 public partial class NominaDeducciones
 {
-    private NominaDeduccionesDeduccion[] deduccionField;
+    [XmlElement("Deduccion")]
+    public NominaDeduccionesDeduccion[] Deduccion { get; set; }
 
-    private decimal totalOtrasDeduccionesField;
+    [XmlAttribute]
+    public decimal TotalOtrasDeducciones { get; set; }
 
-    private bool totalOtrasDeduccionesFieldSpecified;
+    [XmlIgnore]
+    public bool TotalOtrasDeduccionesSpecified { get; set; }
 
-    private decimal totalImpuestosRetenidosField;
+    [XmlAttribute]
+    public decimal TotalImpuestosRetenidos { get; set; }
 
-    private bool totalImpuestosRetenidosFieldSpecified;
-
-    [XmlElementAttribute("Deduccion")]
-    public NominaDeduccionesDeduccion[] Deduccion
-    {
-        get
-        {
-            return this.deduccionField;
-        }
-        set
-        {
-            this.deduccionField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal TotalOtrasDeducciones
-    {
-        get
-        {
-            return this.totalOtrasDeduccionesField;
-        }
-        set
-        {
-            this.totalOtrasDeduccionesField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool TotalOtrasDeduccionesSpecified
-    {
-        get
-        {
-            return this.totalOtrasDeduccionesFieldSpecified;
-        }
-        set
-        {
-            this.totalOtrasDeduccionesFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal TotalImpuestosRetenidos
-    {
-        get
-        {
-            return this.totalImpuestosRetenidosField;
-        }
-        set
-        {
-            this.totalImpuestosRetenidosField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool TotalImpuestosRetenidosSpecified
-    {
-        get
-        {
-            return this.totalImpuestosRetenidosFieldSpecified;
-        }
-        set
-        {
-            this.totalImpuestosRetenidosFieldSpecified = value;
-        }
-    }
+    [XmlIgnore]
+    public bool TotalImpuestosRetenidosSpecified { get; set; }
 }

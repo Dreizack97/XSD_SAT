@@ -2,68 +2,20 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
 public partial class NominaEmisor
 {
-    private NominaEmisorEntidadSNCF entidadSNCFField;
+    public NominaEmisorEntidadSNCF EntidadSNCF { get; set; }
 
-    private string curpField;
+    [XmlAttribute]
+    public string Curp { get; set; }
 
-    private string registroPatronalField;
+    [XmlAttribute]
+    public string RegistroPatronal { get; set; }
 
-    private string rfcPatronOrigenField;
-
-    public NominaEmisorEntidadSNCF EntidadSNCF
-    {
-        get
-        {
-            return this.entidadSNCFField;
-        }
-        set
-        {
-            this.entidadSNCFField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Curp
-    {
-        get
-        {
-            return this.curpField;
-        }
-        set
-        {
-            this.curpField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string RegistroPatronal
-    {
-        get
-        {
-            return this.registroPatronalField;
-        }
-        set
-        {
-            this.registroPatronalField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string RfcPatronOrigen
-    {
-        get
-        {
-            return this.rfcPatronOrigenField;
-        }
-        set
-        {
-            this.rfcPatronOrigenField = value;
-        }
-    }
+    [XmlAttribute]
+    public string RfcPatronOrigen { get; set; }
 }

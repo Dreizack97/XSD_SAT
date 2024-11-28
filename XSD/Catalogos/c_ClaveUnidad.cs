@@ -1,430 +1,430 @@
 ﻿using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[XmlTypeAttribute(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
+[Serializable()]
+[XmlType(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
 public enum c_ClaveUnidad
 {
-    [XmlEnumAttribute("18")]
+    [XmlEnum("18")]
     Item18,
     
-    [XmlEnumAttribute("19")]
+    [XmlEnum("19")]
     Item19,
     
-    [XmlEnumAttribute("26")]
+    [XmlEnum("26")]
     Item26,
     
-    [XmlEnumAttribute("29")]
+    [XmlEnum("29")]
     Item29,
     
-    [XmlEnumAttribute("30")]
+    [XmlEnum("30")]
     Item30,
     
-    [XmlEnumAttribute("31")]
+    [XmlEnum("31")]
     Item31,
     
-    [XmlEnumAttribute("32")]
+    [XmlEnum("32")]
     Item32,
     
-    [XmlEnumAttribute("36")]
+    [XmlEnum("36")]
     Item36,
     
-    [XmlEnumAttribute("44")]
+    [XmlEnum("44")]
     Item44,
     
-    [XmlEnumAttribute("45")]
+    [XmlEnum("45")]
     Item45,
     
-    [XmlEnumAttribute("46")]
+    [XmlEnum("46")]
     Item46,
     
-    [XmlEnumAttribute("47")]
+    [XmlEnum("47")]
     Item47,
     
-    [XmlEnumAttribute("48")]
+    [XmlEnum("48")]
     Item48,
     
-    [XmlEnumAttribute("53")]
+    [XmlEnum("53")]
     Item53,
     
-    [XmlEnumAttribute("54")]
+    [XmlEnum("54")]
     Item54,
     
-    [XmlEnumAttribute("62")]
+    [XmlEnum("62")]
     Item62,
     
-    [XmlEnumAttribute("63")]
+    [XmlEnum("63")]
     Item63,
     
-    [XmlEnumAttribute("64")]
+    [XmlEnum("64")]
     Item64,
     
-    [XmlEnumAttribute("66")]
+    [XmlEnum("66")]
     Item66,
     
-    [XmlEnumAttribute("69")]
+    [XmlEnum("69")]
     Item69,
     
-    [XmlEnumAttribute("71")]
+    [XmlEnum("71")]
     Item71,
     
-    [XmlEnumAttribute("72")]
+    [XmlEnum("72")]
     Item72,
     
-    [XmlEnumAttribute("73")]
+    [XmlEnum("73")]
     Item73,
     
-    [XmlEnumAttribute("76")]
+    [XmlEnum("76")]
     Item76,
     
-    [XmlEnumAttribute("78")]
+    [XmlEnum("78")]
     Item78,
     
-    [XmlEnumAttribute("84")]
+    [XmlEnum("84")]
     Item84,
     
-    [XmlEnumAttribute("90")]
+    [XmlEnum("90")]
     Item90,
     
-    [XmlEnumAttribute("92")]
+    [XmlEnum("92")]
     Item92,
     
-    [XmlEnumAttribute("93")]
+    [XmlEnum("93")]
     Item93,
     
-    [XmlEnumAttribute("94")]
+    [XmlEnum("94")]
     Item94,
     
-    [XmlEnumAttribute("95")]
+    [XmlEnum("95")]
     Item95,
     
-    [XmlEnumAttribute("96")]
+    [XmlEnum("96")]
     Item96,
     
-    [XmlEnumAttribute("97")]
+    [XmlEnum("97")]
     Item97,
     
-    [XmlEnumAttribute("98")]
+    [XmlEnum("98")]
     Item98,
     
-    [XmlEnumAttribute("05")]
+    [XmlEnum("05")]
     Item05,
     
-    [XmlEnumAttribute("06")]
+    [XmlEnum("06")]
     Item06,
     
-    [XmlEnumAttribute("08")]
+    [XmlEnum("08")]
     Item08,
     
-    [XmlEnumAttribute("10")]
+    [XmlEnum("10")]
     Item10,
     
-    [XmlEnumAttribute("11")]
+    [XmlEnum("11")]
     Item11,
     
-    [XmlEnumAttribute("13")]
+    [XmlEnum("13")]
     Item13,
     
-    [XmlEnumAttribute("14")]
+    [XmlEnum("14")]
     Item14,
     
-    [XmlEnumAttribute("15")]
+    [XmlEnum("15")]
     Item15,
     
-    [XmlEnumAttribute("16")]
+    [XmlEnum("16")]
     Item16,
     
-    [XmlEnumAttribute("17")]
+    [XmlEnum("17")]
     Item17,
     
-    [XmlEnumAttribute("1A")]
+    [XmlEnum("1A")]
     Item1A,
     
-    [XmlEnumAttribute("1B")]
+    [XmlEnum("1B")]
     Item1B,
     
-    [XmlEnumAttribute("1C")]
+    [XmlEnum("1C")]
     Item1C,
     
-    [XmlEnumAttribute("1D")]
+    [XmlEnum("1D")]
     Item1D,
     
-    [XmlEnumAttribute("1E")]
+    [XmlEnum("1E")]
     Item1E,
     
-    [XmlEnumAttribute("1F")]
+    [XmlEnum("1F")]
     Item1F,
     
-    [XmlEnumAttribute("1G")]
+    [XmlEnum("1G")]
     Item1G,
     
-    [XmlEnumAttribute("1H")]
+    [XmlEnum("1H")]
     Item1H,
     
-    [XmlEnumAttribute("1I")]
+    [XmlEnum("1I")]
     Item1I,
     
-    [XmlEnumAttribute("1J")]
+    [XmlEnum("1J")]
     Item1J,
     
-    [XmlEnumAttribute("1K")]
+    [XmlEnum("1K")]
     Item1K,
     
-    [XmlEnumAttribute("1L")]
+    [XmlEnum("1L")]
     Item1L,
     
-    [XmlEnumAttribute("1M")]
+    [XmlEnum("1M")]
     Item1M,
     
-    [XmlEnumAttribute("1X")]
+    [XmlEnum("1X")]
     Item1X,
     
-    [XmlEnumAttribute("20")]
+    [XmlEnum("20")]
     Item20,
     
-    [XmlEnumAttribute("21")]
+    [XmlEnum("21")]
     Item21,
     
-    [XmlEnumAttribute("22")]
+    [XmlEnum("22")]
     Item22,
     
-    [XmlEnumAttribute("23")]
+    [XmlEnum("23")]
     Item23,
     
-    [XmlEnumAttribute("24")]
+    [XmlEnum("24")]
     Item24,
     
-    [XmlEnumAttribute("25")]
+    [XmlEnum("25")]
     Item25,
     
-    [XmlEnumAttribute("27")]
+    [XmlEnum("27")]
     Item27,
     
-    [XmlEnumAttribute("28")]
+    [XmlEnum("28")]
     Item28,
     
-    [XmlEnumAttribute("2A")]
+    [XmlEnum("2A")]
     Item2A,
     
-    [XmlEnumAttribute("2B")]
+    [XmlEnum("2B")]
     Item2B,
     
-    [XmlEnumAttribute("2C")]
+    [XmlEnum("2C")]
     Item2C,
     
-    [XmlEnumAttribute("2G")]
+    [XmlEnum("2G")]
     Item2G,
     
-    [XmlEnumAttribute("2H")]
+    [XmlEnum("2H")]
     Item2H,
     
-    [XmlEnumAttribute("2I")]
+    [XmlEnum("2I")]
     Item2I,
     
-    [XmlEnumAttribute("2J")]
+    [XmlEnum("2J")]
     Item2J,
     
-    [XmlEnumAttribute("2K")]
+    [XmlEnum("2K")]
     Item2K,
     
-    [XmlEnumAttribute("2L")]
+    [XmlEnum("2L")]
     Item2L,
     
-    [XmlEnumAttribute("2M")]
+    [XmlEnum("2M")]
     Item2M,
     
-    [XmlEnumAttribute("2N")]
+    [XmlEnum("2N")]
     Item2N,
     
-    [XmlEnumAttribute("2P")]
+    [XmlEnum("2P")]
     Item2P,
     
-    [XmlEnumAttribute("2Q")]
+    [XmlEnum("2Q")]
     Item2Q,
     
-    [XmlEnumAttribute("2R")]
+    [XmlEnum("2R")]
     Item2R,
     
-    [XmlEnumAttribute("2U")]
+    [XmlEnum("2U")]
     Item2U,
     
-    [XmlEnumAttribute("2V")]
+    [XmlEnum("2V")]
     Item2V,
     
-    [XmlEnumAttribute("2X")]
+    [XmlEnum("2X")]
     Item2X,
     
-    [XmlEnumAttribute("2Y")]
+    [XmlEnum("2Y")]
     Item2Y,
     
-    [XmlEnumAttribute("2Z")]
+    [XmlEnum("2Z")]
     Item2Z,
     
-    [XmlEnumAttribute("33")]
+    [XmlEnum("33")]
     Item33,
     
-    [XmlEnumAttribute("34")]
+    [XmlEnum("34")]
     Item34,
     
-    [XmlEnumAttribute("35")]
+    [XmlEnum("35")]
     Item35,
     
-    [XmlEnumAttribute("37")]
+    [XmlEnum("37")]
     Item37,
     
-    [XmlEnumAttribute("38")]
+    [XmlEnum("38")]
     Item38,
     
-    [XmlEnumAttribute("3B")]
+    [XmlEnum("3B")]
     Item3B,
     
-    [XmlEnumAttribute("3C")]
+    [XmlEnum("3C")]
     Item3C,
     
-    [XmlEnumAttribute("3E")]
+    [XmlEnum("3E")]
     Item3E,
     
-    [XmlEnumAttribute("3G")]
+    [XmlEnum("3G")]
     Item3G,
     
-    [XmlEnumAttribute("3H")]
+    [XmlEnum("3H")]
     Item3H,
     
-    [XmlEnumAttribute("3I")]
+    [XmlEnum("3I")]
     Item3I,
     
-    [XmlEnumAttribute("40")]
+    [XmlEnum("40")]
     Item40,
     
-    [XmlEnumAttribute("41")]
+    [XmlEnum("41")]
     Item41,
     
-    [XmlEnumAttribute("4B")]
+    [XmlEnum("4B")]
     Item4B,
     
-    [XmlEnumAttribute("4C")]
+    [XmlEnum("4C")]
     Item4C,
     
-    [XmlEnumAttribute("4E")]
+    [XmlEnum("4E")]
     Item4E,
     
-    [XmlEnumAttribute("4G")]
+    [XmlEnum("4G")]
     Item4G,
     
-    [XmlEnumAttribute("4H")]
+    [XmlEnum("4H")]
     Item4H,
     
-    [XmlEnumAttribute("4K")]
+    [XmlEnum("4K")]
     Item4K,
     
-    [XmlEnumAttribute("4L")]
+    [XmlEnum("4L")]
     Item4L,
     
-    [XmlEnumAttribute("4M")]
+    [XmlEnum("4M")]
     Item4M,
     
-    [XmlEnumAttribute("4N")]
+    [XmlEnum("4N")]
     Item4N,
     
-    [XmlEnumAttribute("4O")]
+    [XmlEnum("4O")]
     Item4O,
     
-    [XmlEnumAttribute("4P")]
+    [XmlEnum("4P")]
     Item4P,
     
-    [XmlEnumAttribute("4Q")]
+    [XmlEnum("4Q")]
     Item4Q,
     
-    [XmlEnumAttribute("4R")]
+    [XmlEnum("4R")]
     Item4R,
     
-    [XmlEnumAttribute("4T")]
+    [XmlEnum("4T")]
     Item4T,
     
-    [XmlEnumAttribute("4U")]
+    [XmlEnum("4U")]
     Item4U,
     
-    [XmlEnumAttribute("4W")]
+    [XmlEnum("4W")]
     Item4W,
     
-    [XmlEnumAttribute("4X")]
+    [XmlEnum("4X")]
     Item4X,
     
-    [XmlEnumAttribute("56")]
+    [XmlEnum("56")]
     Item56,
     
-    [XmlEnumAttribute("57")]
+    [XmlEnum("57")]
     Item57,
     
-    [XmlEnumAttribute("58")]
+    [XmlEnum("58")]
     Item58,
     
-    [XmlEnumAttribute("59")]
+    [XmlEnum("59")]
     Item59,
     
-    [XmlEnumAttribute("5A")]
+    [XmlEnum("5A")]
     Item5A,
     
-    [XmlEnumAttribute("5B")]
+    [XmlEnum("5B")]
     Item5B,
     
-    [XmlEnumAttribute("5C")]
+    [XmlEnum("5C")]
     Item5C,
     
-    [XmlEnumAttribute("5E")]
+    [XmlEnum("5E")]
     Item5E,
     
-    [XmlEnumAttribute("5F")]
+    [XmlEnum("5F")]
     Item5F,
     
-    [XmlEnumAttribute("5G")]
+    [XmlEnum("5G")]
     Item5G,
     
-    [XmlEnumAttribute("5H")]
+    [XmlEnum("5H")]
     Item5H,
     
-    [XmlEnumAttribute("5I")]
+    [XmlEnum("5I")]
     Item5I,
     
-    [XmlEnumAttribute("5J")]
+    [XmlEnum("5J")]
     Item5J,
     
-    [XmlEnumAttribute("5K")]
+    [XmlEnum("5K")]
     Item5K,
     
-    [XmlEnumAttribute("5P")]
+    [XmlEnum("5P")]
     Item5P,
     
-    [XmlEnumAttribute("5Q")]
+    [XmlEnum("5Q")]
     Item5Q,
     
-    [XmlEnumAttribute("60")]
+    [XmlEnum("60")]
     Item60,
     
-    [XmlEnumAttribute("61")]
+    [XmlEnum("61")]
     Item61,
     
-    [XmlEnumAttribute("74")]
+    [XmlEnum("74")]
     Item74,
     
-    [XmlEnumAttribute("77")]
+    [XmlEnum("77")]
     Item77,
     
-    [XmlEnumAttribute("80")]
+    [XmlEnum("80")]
     Item80,
     
-    [XmlEnumAttribute("81")]
+    [XmlEnum("81")]
     Item81,
     
-    [XmlEnumAttribute("85")]
+    [XmlEnum("85")]
     Item85,
     
-    [XmlEnumAttribute("87")]
+    [XmlEnum("87")]
     Item87,
     
-    [XmlEnumAttribute("89")]
+    [XmlEnum("89")]
     Item89,
     
-    [XmlEnumAttribute("91")]
+    [XmlEnum("91")]
     Item91,
     
     A1,

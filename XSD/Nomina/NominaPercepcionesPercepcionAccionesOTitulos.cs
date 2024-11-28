@@ -2,39 +2,15 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
 public partial class NominaPercepcionesPercepcionAccionesOTitulos
 {
-    private decimal valorMercadoField;
+    [XmlAttribute]
+    public decimal ValorMercado { get; set; }
 
-    private decimal precioAlOtorgarseField;
-
-    [XmlAttributeAttribute()]
-    public decimal ValorMercado
-    {
-        get
-        {
-            return this.valorMercadoField;
-        }
-        set
-        {
-            this.valorMercadoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal PrecioAlOtorgarse
-    {
-        get
-        {
-            return this.precioAlOtorgarseField;
-        }
-        set
-        {
-            this.precioAlOtorgarseField = value;
-        }
-    }
+    [XmlAttribute]
+    public decimal PrecioAlOtorgarse { get; set; }
 }

@@ -2,399 +2,87 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
 public partial class NominaReceptor
 {
-    private NominaReceptorSubContratacion[] subContratacionField;
+    [XmlElement("SubContratacion")]
+    public NominaReceptorSubContratacion[] SubContratacion { get; set; }
 
-    private string curpField;
+    [XmlAttribute]
+    public string Curp { get; set; }
 
-    private string numSeguridadSocialField;
+    [XmlAttribute]
+    public string NumSeguridadSocial { get; set; }
 
-    private System.DateTime fechaInicioRelLaboralField;
+    [XmlAttribute(DataType = "date")]
+    public DateTime FechaInicioRelLaboral { get; set; }
 
-    private bool fechaInicioRelLaboralFieldSpecified;
+    [XmlIgnore]
+    public bool FechaInicioRelLaboralSpecified { get; set; }
 
-    private string antigüedadField;
+    [XmlAttribute]
+    public string Antigüedad { get; set; }
 
-    private c_TipoContrato tipoContratoField;
+    [XmlAttribute]
+    public c_TipoContrato TipoContrato { get; set; }
 
-    private NominaReceptorSindicalizado sindicalizadoField;
+    [XmlAttribute]
+    public NominaReceptorSindicalizado Sindicalizado { get; set; }
 
-    private bool sindicalizadoFieldSpecified;
+    [XmlIgnore]
+    public bool SindicalizadoSpecified { get; set; }
 
-    private c_TipoJornada tipoJornadaField;
+    [XmlAttribute]
+    public c_TipoJornada TipoJornada { get; set; }
 
-    private bool tipoJornadaFieldSpecified;
+    [XmlIgnore]
+    public bool TipoJornadaSpecified { get; set; }
 
-    private c_TipoRegimen tipoRegimenField;
+    [XmlAttribute]
+    public c_TipoRegimen TipoRegimen { get; set; }
 
-    private string numEmpleadoField;
+    [XmlAttribute]
+    public string NumEmpleado { get; set; }
 
-    private string departamentoField;
+    [XmlAttribute]
+    public string Departamento { get; set; }
 
-    private string puestoField;
+    [XmlAttribute]
+    public string Puesto { get; set; }
 
-    private c_RiesgoPuesto riesgoPuestoField;
+    [XmlAttribute]
+    public c_RiesgoPuesto RiesgoPuesto { get; set; }
 
-    private bool riesgoPuestoFieldSpecified;
+    [XmlIgnore]
+    public bool RiesgoPuestoSpecified { get; set; }
 
-    private c_PeriodicidadPago periodicidadPagoField;
+    [XmlAttribute]
+    public c_PeriodicidadPago PeriodicidadPago { get; set; }
 
-    private c_Banco bancoField;
+    [XmlAttribute]
+    public c_Banco Banco { get; set; }
 
-    private bool bancoFieldSpecified;
+    [XmlIgnore]
+    public bool BancoSpecified { get; set; }
 
-    private string cuentaBancariaField;
+    [XmlAttribute(DataType = "integer")]
+    public string CuentaBancaria { get; set; }
 
-    private decimal salarioBaseCotAporField;
+    [XmlAttribute]
+    public decimal SalarioBaseCotApor { get; set; }
 
-    private bool salarioBaseCotAporFieldSpecified;
+    [XmlIgnore]
+    public bool SalarioBaseCotAporSpecified { get; set; }
 
-    private decimal salarioDiarioIntegradoField;
+    [XmlAttribute]
+    public decimal SalarioDiarioIntegrado { get; set; }
 
-    private bool salarioDiarioIntegradoFieldSpecified;
+    [XmlIgnore]
+    public bool SalarioDiarioIntegradoSpecified { get; set; }
 
-    private c_Estado claveEntFedField;
-
-    [XmlElementAttribute("SubContratacion")]
-    public NominaReceptorSubContratacion[] SubContratacion
-    {
-        get
-        {
-            return this.subContratacionField;
-        }
-        set
-        {
-            this.subContratacionField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Curp
-    {
-        get
-        {
-            return this.curpField;
-        }
-        set
-        {
-            this.curpField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string NumSeguridadSocial
-    {
-        get
-        {
-            return this.numSeguridadSocialField;
-        }
-        set
-        {
-            this.numSeguridadSocialField = value;
-        }
-    }
-
-    [XmlAttributeAttribute(DataType = "date")]
-    public System.DateTime FechaInicioRelLaboral
-    {
-        get
-        {
-            return this.fechaInicioRelLaboralField;
-        }
-        set
-        {
-            this.fechaInicioRelLaboralField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool FechaInicioRelLaboralSpecified
-    {
-        get
-        {
-            return this.fechaInicioRelLaboralFieldSpecified;
-        }
-        set
-        {
-            this.fechaInicioRelLaboralFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Antigüedad
-    {
-        get
-        {
-            return this.antigüedadField;
-        }
-        set
-        {
-            this.antigüedadField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_TipoContrato TipoContrato
-    {
-        get
-        {
-            return this.tipoContratoField;
-        }
-        set
-        {
-            this.tipoContratoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public NominaReceptorSindicalizado Sindicalizado
-    {
-        get
-        {
-            return this.sindicalizadoField;
-        }
-        set
-        {
-            this.sindicalizadoField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool SindicalizadoSpecified
-    {
-        get
-        {
-            return this.sindicalizadoFieldSpecified;
-        }
-        set
-        {
-            this.sindicalizadoFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_TipoJornada TipoJornada
-    {
-        get
-        {
-            return this.tipoJornadaField;
-        }
-        set
-        {
-            this.tipoJornadaField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool TipoJornadaSpecified
-    {
-        get
-        {
-            return this.tipoJornadaFieldSpecified;
-        }
-        set
-        {
-            this.tipoJornadaFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_TipoRegimen TipoRegimen
-    {
-        get
-        {
-            return this.tipoRegimenField;
-        }
-        set
-        {
-            this.tipoRegimenField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string NumEmpleado
-    {
-        get
-        {
-            return this.numEmpleadoField;
-        }
-        set
-        {
-            this.numEmpleadoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Departamento
-    {
-        get
-        {
-            return this.departamentoField;
-        }
-        set
-        {
-            this.departamentoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Puesto
-    {
-        get
-        {
-            return this.puestoField;
-        }
-        set
-        {
-            this.puestoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_RiesgoPuesto RiesgoPuesto
-    {
-        get
-        {
-            return this.riesgoPuestoField;
-        }
-        set
-        {
-            this.riesgoPuestoField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool RiesgoPuestoSpecified
-    {
-        get
-        {
-            return this.riesgoPuestoFieldSpecified;
-        }
-        set
-        {
-            this.riesgoPuestoFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_PeriodicidadPago PeriodicidadPago
-    {
-        get
-        {
-            return this.periodicidadPagoField;
-        }
-        set
-        {
-            this.periodicidadPagoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_Banco Banco
-    {
-        get
-        {
-            return this.bancoField;
-        }
-        set
-        {
-            this.bancoField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool BancoSpecified
-    {
-        get
-        {
-            return this.bancoFieldSpecified;
-        }
-        set
-        {
-            this.bancoFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute(DataType = "integer")]
-    public string CuentaBancaria
-    {
-        get
-        {
-            return this.cuentaBancariaField;
-        }
-        set
-        {
-            this.cuentaBancariaField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal SalarioBaseCotApor
-    {
-        get
-        {
-            return this.salarioBaseCotAporField;
-        }
-        set
-        {
-            this.salarioBaseCotAporField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool SalarioBaseCotAporSpecified
-    {
-        get
-        {
-            return this.salarioBaseCotAporFieldSpecified;
-        }
-        set
-        {
-            this.salarioBaseCotAporFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal SalarioDiarioIntegrado
-    {
-        get
-        {
-            return this.salarioDiarioIntegradoField;
-        }
-        set
-        {
-            this.salarioDiarioIntegradoField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool SalarioDiarioIntegradoSpecified
-    {
-        get
-        {
-            return this.salarioDiarioIntegradoFieldSpecified;
-        }
-        set
-        {
-            this.salarioDiarioIntegradoFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_Estado ClaveEntFed
-    {
-        get
-        {
-            return this.claveEntFedField;
-        }
-        set
-        {
-            this.claveEntFedField = value;
-        }
-    }
+    [XmlAttribute]
+    public c_Estado ClaveEntFed { get; set; }
 }

@@ -1,27 +1,27 @@
 ﻿using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[XmlTypeAttribute(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos/Nomina")]
+[Serializable()]
+[XmlType(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos/Nomina")]
 public enum c_TipoOtroPago
 {
-    [XmlEnumAttribute("001")]
+    [XmlEnum("001")]
     Item001,
-    [XmlEnumAttribute("002")]
+    [XmlEnum("002")]
     Item002,
-    [XmlEnumAttribute("003")]
+    [XmlEnum("003")]
     Item003,
-    [XmlEnumAttribute("004")]
+    [XmlEnum("004")]
     Item004,
-    [XmlEnumAttribute("005")]
+    [XmlEnum("005")]
     Item005,
-    [XmlEnumAttribute("006")]
+    [XmlEnum("006")]
     Item006,
-    [XmlEnumAttribute("007")]
+    [XmlEnum("007")]
     Item007,
-    [XmlEnumAttribute("008")]
+    [XmlEnum("008")]
     Item008,
-    [XmlEnumAttribute("009")]
+    [XmlEnum("009")]
     Item009,
-    [XmlEnumAttribute("999")]
+    [XmlEnum("999")]
     Item999,
 }

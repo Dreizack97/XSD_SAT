@@ -2,69 +2,22 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
+
 public partial class ComprobanteConceptoACuentaTerceros
 {
-    private string rfcACuentaTercerosField;
+    [XmlAttribute]
+    public string RfcACuentaTerceros { get; set; } = string.Empty;
 
-    private string nombreACuentaTercerosField;
+    [XmlAttribute]
+    public string NombreACuentaTerceros { get; set; } = string.Empty;
 
-    private c_RegimenFiscal regimenFiscalACuentaTercerosField;
+    [XmlAttribute]
+    public c_RegimenFiscal RegimenFiscalACuentaTerceros { get; set; }
 
-    private string domicilioFiscalACuentaTercerosField;
-
-    [XmlAttributeAttribute()]
-    public string RfcACuentaTerceros
-    {
-        get
-        {
-            return this.rfcACuentaTercerosField;
-        }
-        set
-        {
-            this.rfcACuentaTercerosField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string NombreACuentaTerceros
-    {
-        get
-        {
-            return this.nombreACuentaTercerosField;
-        }
-        set
-        {
-            this.nombreACuentaTercerosField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_RegimenFiscal RegimenFiscalACuentaTerceros
-    {
-        get
-        {
-            return this.regimenFiscalACuentaTercerosField;
-        }
-        set
-        {
-            this.regimenFiscalACuentaTercerosField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string DomicilioFiscalACuentaTerceros
-    {
-        get
-        {
-            return this.domicilioFiscalACuentaTercerosField;
-        }
-        set
-        {
-            this.domicilioFiscalACuentaTercerosField = value;
-        }
-    }
+    [XmlAttribute]
+    public string DomicilioFiscalACuentaTerceros { get; set; } = string.Empty;
 }

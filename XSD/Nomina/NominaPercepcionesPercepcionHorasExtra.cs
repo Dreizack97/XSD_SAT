@@ -2,69 +2,21 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
 public partial class NominaPercepcionesPercepcionHorasExtra
 {
-    private int diasField;
+    [XmlAttribute]
+    public int Dias { get; set; }
 
-    private c_TipoHoras tipoHorasField;
+    [XmlAttribute]
+    public c_TipoHoras TipoHoras { get; set; }
 
-    private int horasExtraField;
+    [XmlAttribute]
+    public int HorasExtra { get; set; }
 
-    private decimal importePagadoField;
-
-    [XmlAttributeAttribute()]
-    public int Dias
-    {
-        get
-        {
-            return this.diasField;
-        }
-        set
-        {
-            this.diasField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_TipoHoras TipoHoras
-    {
-        get
-        {
-            return this.tipoHorasField;
-        }
-        set
-        {
-            this.tipoHorasField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public int HorasExtra
-    {
-        get
-        {
-            return this.horasExtraField;
-        }
-        set
-        {
-            this.horasExtraField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal ImportePagado
-    {
-        get
-        {
-            return this.importePagadoField;
-        }
-        set
-        {
-            this.importePagadoField = value;
-        }
-    }
+    [XmlAttribute]
+    public decimal ImportePagado { get; set; }
 }

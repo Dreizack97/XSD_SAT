@@ -2,172 +2,40 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
 public partial class NominaPercepciones
 {
-    private NominaPercepcionesPercepcion[] percepcionField;
+    [XmlElement("Percepcion")]
+    public NominaPercepcionesPercepcion[] Percepcion { get; set; }
 
-    private NominaPercepcionesJubilacionPensionRetiro jubilacionPensionRetiroField;
+    public NominaPercepcionesJubilacionPensionRetiro JubilacionPensionRetiro { get; set; }
 
-    private NominaPercepcionesSeparacionIndemnizacion separacionIndemnizacionField;
+    public NominaPercepcionesSeparacionIndemnizacion SeparacionIndemnizacion { get; set; }
 
-    private decimal totalSueldosField;
+    [XmlAttribute]
+    public decimal TotalSueldos { get; set; }
 
-    private bool totalSueldosFieldSpecified;
+    [XmlIgnore]
+    public bool TotalSueldosSpecified { get; set; }
 
-    private decimal totalSeparacionIndemnizacionField;
+    [XmlAttribute]
+    public decimal TotalSeparacionIndemnizacion { get; set; }
 
-    private bool totalSeparacionIndemnizacionFieldSpecified;
+    [XmlIgnore]
+    public bool TotalSeparacionIndemnizacionSpecified { get; set; }
 
-    private decimal totalJubilacionPensionRetiroField;
+    [XmlAttribute]
+    public decimal TotalJubilacionPensionRetiro { get; set; }
 
-    private bool totalJubilacionPensionRetiroFieldSpecified;
+    [XmlIgnore]
+    public bool TotalJubilacionPensionRetiroSpecified { get; set; }
 
-    private decimal totalGravadoField;
+    [XmlAttribute]
+    public decimal TotalGravado { get; set; }
 
-    private decimal totalExentoField;
-
-    [XmlElementAttribute("Percepcion")]
-    public NominaPercepcionesPercepcion[] Percepcion
-    {
-        get
-        {
-            return this.percepcionField;
-        }
-        set
-        {
-            this.percepcionField = value;
-        }
-    }
-
-    public NominaPercepcionesJubilacionPensionRetiro JubilacionPensionRetiro
-    {
-        get
-        {
-            return this.jubilacionPensionRetiroField;
-        }
-        set
-        {
-            this.jubilacionPensionRetiroField = value;
-        }
-    }
-
-    public NominaPercepcionesSeparacionIndemnizacion SeparacionIndemnizacion
-    {
-        get
-        {
-            return this.separacionIndemnizacionField;
-        }
-        set
-        {
-            this.separacionIndemnizacionField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal TotalSueldos
-    {
-        get
-        {
-            return this.totalSueldosField;
-        }
-        set
-        {
-            this.totalSueldosField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool TotalSueldosSpecified
-    {
-        get
-        {
-            return this.totalSueldosFieldSpecified;
-        }
-        set
-        {
-            this.totalSueldosFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal TotalSeparacionIndemnizacion
-    {
-        get
-        {
-            return this.totalSeparacionIndemnizacionField;
-        }
-        set
-        {
-            this.totalSeparacionIndemnizacionField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool TotalSeparacionIndemnizacionSpecified
-    {
-        get
-        {
-            return this.totalSeparacionIndemnizacionFieldSpecified;
-        }
-        set
-        {
-            this.totalSeparacionIndemnizacionFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal TotalJubilacionPensionRetiro
-    {
-        get
-        {
-            return this.totalJubilacionPensionRetiroField;
-        }
-        set
-        {
-            this.totalJubilacionPensionRetiroField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool TotalJubilacionPensionRetiroSpecified
-    {
-        get
-        {
-            return this.totalJubilacionPensionRetiroFieldSpecified;
-        }
-        set
-        {
-            this.totalJubilacionPensionRetiroFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal TotalGravado
-    {
-        get
-        {
-            return this.totalGravadoField;
-        }
-        set
-        {
-            this.totalGravadoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal TotalExento
-    {
-        get
-        {
-            return this.totalExentoField;
-        }
-        set
-        {
-            this.totalExentoField = value;
-        }
-    }
+    [XmlAttribute]
+    public decimal TotalExento { get; set; }
 }

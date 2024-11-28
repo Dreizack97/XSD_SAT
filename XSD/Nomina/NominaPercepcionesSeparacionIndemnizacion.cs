@@ -2,84 +2,24 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
 public partial class NominaPercepcionesSeparacionIndemnizacion
 {
-    private decimal totalPagadoField;
+    [XmlAttribute]
+    public decimal TotalPagado { get; set; }
 
-    private int numAñosServicioField;
+    [XmlAttribute]
+    public int NumAñosServicio { get; set; }
 
-    private decimal ultimoSueldoMensOrdField;
+    [XmlAttribute]
+    public decimal UltimoSueldoMensOrd { get; set; }
 
-    private decimal ingresoAcumulableField;
+    [XmlAttribute]
+    public decimal IngresoAcumulable { get; set; }
 
-    private decimal ingresoNoAcumulableField;
-
-    [XmlAttributeAttribute()]
-    public decimal TotalPagado
-    {
-        get
-        {
-            return this.totalPagadoField;
-        }
-        set
-        {
-            this.totalPagadoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public int NumAñosServicio
-    {
-        get
-        {
-            return this.numAñosServicioField;
-        }
-        set
-        {
-            this.numAñosServicioField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal UltimoSueldoMensOrd
-    {
-        get
-        {
-            return this.ultimoSueldoMensOrdField;
-        }
-        set
-        {
-            this.ultimoSueldoMensOrdField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal IngresoAcumulable
-    {
-        get
-        {
-            return this.ingresoAcumulableField;
-        }
-        set
-        {
-            this.ingresoAcumulableField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal IngresoNoAcumulable
-    {
-        get
-        {
-            return this.ingresoNoAcumulableField;
-        }
-        set
-        {
-            this.ingresoNoAcumulableField = value;
-        }
-    }
+    [XmlAttribute]
+    public decimal IngresoNoAcumulable { get; set; }
 }

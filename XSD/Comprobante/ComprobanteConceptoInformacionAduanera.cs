@@ -2,24 +2,12 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
 public partial class ComprobanteConceptoInformacionAduanera
 {
-    private string numeroPedimentoField;
-
-    [XmlAttributeAttribute()]
-    public string NumeroPedimento
-    {
-        get
-        {
-            return this.numeroPedimentoField;
-        }
-        set
-        {
-            this.numeroPedimentoField = value;
-        }
-    }
+    [XmlAttribute]
+    public string NumeroPedimento { get; set; }
 }

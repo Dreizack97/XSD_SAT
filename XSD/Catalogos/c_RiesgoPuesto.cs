@@ -1,19 +1,19 @@
 ﻿using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[XmlTypeAttribute(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos/Nomina")]
+[Serializable()]
+[XmlType(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos/Nomina")]
 public enum c_RiesgoPuesto
 {
-    [XmlEnumAttribute("1")]
+    [XmlEnum("1")]
     Item1,
-    [XmlEnumAttribute("2")]
+    [XmlEnum("2")]
     Item2,
-    [XmlEnumAttribute("3")]
+    [XmlEnum("3")]
     Item3,
-    [XmlEnumAttribute("4")]
+    [XmlEnum("4")]
     Item4,
-    [XmlEnumAttribute("5")]
+    [XmlEnum("5")]
     Item5,
-    [XmlEnumAttribute("99")]
+    [XmlEnum("99")]
     Item99,
 }

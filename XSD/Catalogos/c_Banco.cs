@@ -1,219 +1,219 @@
 ﻿using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[XmlTypeAttribute(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos/Nomina")]
+[Serializable()]
+[XmlType(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos/Nomina")]
 public enum c_Banco
 {
-    [XmlEnumAttribute("002")]
+    [XmlEnum("002")]
     Item002,
-    [XmlEnumAttribute("006")]
+    [XmlEnum("006")]
     Item006,
-    [XmlEnumAttribute("009")]
+    [XmlEnum("009")]
     Item009,
-    [XmlEnumAttribute("012")]
+    [XmlEnum("012")]
     Item012,
-    [XmlEnumAttribute("014")]
+    [XmlEnum("014")]
     Item014,
-    [XmlEnumAttribute("019")]
+    [XmlEnum("019")]
     Item019,
-    [XmlEnumAttribute("021")]
+    [XmlEnum("021")]
     Item021,
-    [XmlEnumAttribute("030")]
+    [XmlEnum("030")]
     Item030,
-    [XmlEnumAttribute("032")]
+    [XmlEnum("032")]
     Item032,
-    [XmlEnumAttribute("036")]
+    [XmlEnum("036")]
     Item036,
-    [XmlEnumAttribute("037")]
+    [XmlEnum("037")]
     Item037,
-    [XmlEnumAttribute("042")]
+    [XmlEnum("042")]
     Item042,
-    [XmlEnumAttribute("044")]
+    [XmlEnum("044")]
     Item044,
-    [XmlEnumAttribute("058")]
+    [XmlEnum("058")]
     Item058,
-    [XmlEnumAttribute("059")]
+    [XmlEnum("059")]
     Item059,
-    [XmlEnumAttribute("060")]
+    [XmlEnum("060")]
     Item060,
-    [XmlEnumAttribute("062")]
+    [XmlEnum("062")]
     Item062,
-    [XmlEnumAttribute("072")]
+    [XmlEnum("072")]
     Item072,
-    [XmlEnumAttribute("102")]
+    [XmlEnum("102")]
     Item102,
-    [XmlEnumAttribute("103")]
+    [XmlEnum("103")]
     Item103,
-    [XmlEnumAttribute("106")]
+    [XmlEnum("106")]
     Item106,
-    [XmlEnumAttribute("108")]
+    [XmlEnum("108")]
     Item108,
-    [XmlEnumAttribute("110")]
+    [XmlEnum("110")]
     Item110,
-    [XmlEnumAttribute("112")]
+    [XmlEnum("112")]
     Item112,
-    [XmlEnumAttribute("113")]
+    [XmlEnum("113")]
     Item113,
-    [XmlEnumAttribute("116")]
+    [XmlEnum("116")]
     Item116,
-    [XmlEnumAttribute("124")]
+    [XmlEnum("124")]
     Item124,
-    [XmlEnumAttribute("126")]
+    [XmlEnum("126")]
     Item126,
-    [XmlEnumAttribute("127")]
+    [XmlEnum("127")]
     Item127,
-    [XmlEnumAttribute("128")]
+    [XmlEnum("128")]
     Item128,
-    [XmlEnumAttribute("129")]
+    [XmlEnum("129")]
     Item129,
-    [XmlEnumAttribute("130")]
+    [XmlEnum("130")]
     Item130,
-    [XmlEnumAttribute("131")]
+    [XmlEnum("131")]
     Item131,
-    [XmlEnumAttribute("132")]
+    [XmlEnum("132")]
     Item132,
-    [XmlEnumAttribute("133")]
+    [XmlEnum("133")]
     Item133,
-    [XmlEnumAttribute("134")]
+    [XmlEnum("134")]
     Item134,
-    [XmlEnumAttribute("135")]
+    [XmlEnum("135")]
     Item135,
-    [XmlEnumAttribute("136")]
+    [XmlEnum("136")]
     Item136,
-    [XmlEnumAttribute("137")]
+    [XmlEnum("137")]
     Item137,
-    [XmlEnumAttribute("138")]
+    [XmlEnum("138")]
     Item138,
-    [XmlEnumAttribute("139")]
+    [XmlEnum("139")]
     Item139,
-    [XmlEnumAttribute("140")]
+    [XmlEnum("140")]
     Item140,
-    [XmlEnumAttribute("141")]
+    [XmlEnum("141")]
     Item141,
-    [XmlEnumAttribute("143")]
+    [XmlEnum("143")]
     Item143,
-    [XmlEnumAttribute("145")]
+    [XmlEnum("145")]
     Item145,
-    [XmlEnumAttribute("147")]
+    [XmlEnum("147")]
     Item147,
-    [XmlEnumAttribute("148")]
+    [XmlEnum("148")]
     Item148,
-    [XmlEnumAttribute("149")]
+    [XmlEnum("149")]
     Item149,
-    [XmlEnumAttribute("150")]
+    [XmlEnum("150")]
     Item150,
-    [XmlEnumAttribute("151")]
+    [XmlEnum("151")]
     Item151,
-    [XmlEnumAttribute("152")]
+    [XmlEnum("152")]
     Item152,
-    [XmlEnumAttribute("153")]
+    [XmlEnum("153")]
     Item153,
-    [XmlEnumAttribute("154")]
+    [XmlEnum("154")]
     Item154,
-    [XmlEnumAttribute("155")]
+    [XmlEnum("155")]
     Item155,
-    [XmlEnumAttribute("156")]
+    [XmlEnum("156")]
     Item156,
-    [XmlEnumAttribute("157")]
+    [XmlEnum("157")]
     Item157,
-    [XmlEnumAttribute("158")]
+    [XmlEnum("158")]
     Item158,
-    [XmlEnumAttribute("159")]
+    [XmlEnum("159")]
     Item159,
-    [XmlEnumAttribute("160")]
+    [XmlEnum("160")]
     Item160,
-    [XmlEnumAttribute("166")]
+    [XmlEnum("166")]
     Item166,
-    [XmlEnumAttribute("168")]
+    [XmlEnum("168")]
     Item168,
-    [XmlEnumAttribute("600")]
+    [XmlEnum("600")]
     Item600,
-    [XmlEnumAttribute("601")]
+    [XmlEnum("601")]
     Item601,
-    [XmlEnumAttribute("602")]
+    [XmlEnum("602")]
     Item602,
-    [XmlEnumAttribute("605")]
+    [XmlEnum("605")]
     Item605,
-    [XmlEnumAttribute("606")]
+    [XmlEnum("606")]
     Item606,
-    [XmlEnumAttribute("607")]
+    [XmlEnum("607")]
     Item607,
-    [XmlEnumAttribute("608")]
+    [XmlEnum("608")]
     Item608,
-    [XmlEnumAttribute("610")]
+    [XmlEnum("610")]
     Item610,
-    [XmlEnumAttribute("614")]
+    [XmlEnum("614")]
     Item614,
-    [XmlEnumAttribute("615")]
+    [XmlEnum("615")]
     Item615,
-    [XmlEnumAttribute("616")]
+    [XmlEnum("616")]
     Item616,
-    [XmlEnumAttribute("617")]
+    [XmlEnum("617")]
     Item617,
-    [XmlEnumAttribute("618")]
+    [XmlEnum("618")]
     Item618,
-    [XmlEnumAttribute("619")]
+    [XmlEnum("619")]
     Item619,
-    [XmlEnumAttribute("620")]
+    [XmlEnum("620")]
     Item620,
-    [XmlEnumAttribute("621")]
+    [XmlEnum("621")]
     Item621,
-    [XmlEnumAttribute("622")]
+    [XmlEnum("622")]
     Item622,
-    [XmlEnumAttribute("623")]
+    [XmlEnum("623")]
     Item623,
-    [XmlEnumAttribute("626")]
+    [XmlEnum("626")]
     Item626,
-    [XmlEnumAttribute("627")]
+    [XmlEnum("627")]
     Item627,
-    [XmlEnumAttribute("628")]
+    [XmlEnum("628")]
     Item628,
-    [XmlEnumAttribute("629")]
+    [XmlEnum("629")]
     Item629,
-    [XmlEnumAttribute("630")]
+    [XmlEnum("630")]
     Item630,
-    [XmlEnumAttribute("631")]
+    [XmlEnum("631")]
     Item631,
-    [XmlEnumAttribute("632")]
+    [XmlEnum("632")]
     Item632,
-    [XmlEnumAttribute("633")]
+    [XmlEnum("633")]
     Item633,
-    [XmlEnumAttribute("634")]
+    [XmlEnum("634")]
     Item634,
-    [XmlEnumAttribute("636")]
+    [XmlEnum("636")]
     Item636,
-    [XmlEnumAttribute("637")]
+    [XmlEnum("637")]
     Item637,
-    [XmlEnumAttribute("638")]
+    [XmlEnum("638")]
     Item638,
-    [XmlEnumAttribute("640")]
+    [XmlEnum("640")]
     Item640,
-    [XmlEnumAttribute("642")]
+    [XmlEnum("642")]
     Item642,
-    [XmlEnumAttribute("646")]
+    [XmlEnum("646")]
     Item646,
-    [XmlEnumAttribute("647")]
+    [XmlEnum("647")]
     Item647,
-    [XmlEnumAttribute("648")]
+    [XmlEnum("648")]
     Item648,
-    [XmlEnumAttribute("649")]
+    [XmlEnum("649")]
     Item649,
-    [XmlEnumAttribute("651")]
+    [XmlEnum("651")]
     Item651,
-    [XmlEnumAttribute("652")]
+    [XmlEnum("652")]
     Item652,
-    [XmlEnumAttribute("653")]
+    [XmlEnum("653")]
     Item653,
-    [XmlEnumAttribute("655")]
+    [XmlEnum("655")]
     Item655,
-    [XmlEnumAttribute("656")]
+    [XmlEnum("656")]
     Item656,
-    [XmlEnumAttribute("659")]
+    [XmlEnum("659")]
     Item659,
-    [XmlEnumAttribute("670")]
+    [XmlEnum("670")]
     Item670,
-    [XmlEnumAttribute("901")]
+    [XmlEnum("901")]
     Item901,
-    [XmlEnumAttribute("902")]
+    [XmlEnum("902")]
     Item902,
 }

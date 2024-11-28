@@ -2,159 +2,39 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
 public partial class ComprobanteConceptoParte
 {
-    private ComprobanteConceptoParteInformacionAduanera[] informacionAduaneraField;
+    [XmlElement("InformacionAduanera")]
+    public ComprobanteConceptoParteInformacionAduanera[] InformacionAduanera { get; set; }
 
-    private c_ClaveProdServ claveProdServField;
+    [XmlAttribute]
+    public c_ClaveProdServ ClaveProdServ { get; set; }
 
-    private string noIdentificacionField;
+    [XmlAttribute]
+    public string NoIdentificacion { get; set; }
 
-    private decimal cantidadField;
+    [XmlAttribute]
+    public decimal Cantidad { get; set; }
 
-    private string unidadField;
+    [XmlAttribute]
+    public string Unidad { get; set; }
 
-    private string descripcionField;
+    [XmlAttribute]
+    public string Descripcion { get; set; }
 
-    private decimal valorUnitarioField;
+    [XmlAttribute]
+    public decimal ValorUnitario { get; set; }
 
-    private bool valorUnitarioFieldSpecified;
+    [XmlIgnore]
+    public bool ValorUnitarioSpecified { get; set; }
 
-    private decimal importeField;
+    [XmlAttribute]
+    public decimal Importe { get; set; }
 
-    private bool importeFieldSpecified;
-
-    [XmlElementAttribute("InformacionAduanera")]
-    public ComprobanteConceptoParteInformacionAduanera[] InformacionAduanera
-    {
-        get
-        {
-            return this.informacionAduaneraField;
-        }
-        set
-        {
-            this.informacionAduaneraField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_ClaveProdServ ClaveProdServ
-    {
-        get
-        {
-            return this.claveProdServField;
-        }
-        set
-        {
-            this.claveProdServField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string NoIdentificacion
-    {
-        get
-        {
-            return this.noIdentificacionField;
-        }
-        set
-        {
-            this.noIdentificacionField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal Cantidad
-    {
-        get
-        {
-            return this.cantidadField;
-        }
-        set
-        {
-            this.cantidadField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Unidad
-    {
-        get
-        {
-            return this.unidadField;
-        }
-        set
-        {
-            this.unidadField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Descripcion
-    {
-        get
-        {
-            return this.descripcionField;
-        }
-        set
-        {
-            this.descripcionField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal ValorUnitario
-    {
-        get
-        {
-            return this.valorUnitarioField;
-        }
-        set
-        {
-            this.valorUnitarioField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool ValorUnitarioSpecified
-    {
-        get
-        {
-            return this.valorUnitarioFieldSpecified;
-        }
-        set
-        {
-            this.valorUnitarioFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal Importe
-    {
-        get
-        {
-            return this.importeField;
-        }
-        set
-        {
-            this.importeField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool ImporteSpecified
-    {
-        get
-        {
-            return this.importeFieldSpecified;
-        }
-        set
-        {
-            this.importeFieldSpecified = value;
-        }
-    }
+    [XmlIgnore]
+    public bool ImporteSpecified { get; set; }
 }

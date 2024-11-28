@@ -2,113 +2,29 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
 public partial class NominaPercepcionesPercepcion
 {
-    private NominaPercepcionesPercepcionAccionesOTitulos accionesOTitulosField;
+    public NominaPercepcionesPercepcionAccionesOTitulos AccionesOTitulos { get; set; }
 
-    private NominaPercepcionesPercepcionHorasExtra[] horasExtraField;
+    [XmlElement("HorasExtra")]
+    public NominaPercepcionesPercepcionHorasExtra[] HorasExtra { get; set; }
 
-    private c_TipoPercepcion tipoPercepcionField;
+    [XmlAttribute]
+    public c_TipoPercepcion TipoPercepcion { get; set; }
 
-    private string claveField;
+    [XmlAttribute]
+    public string Clave { get; set; }
 
-    private string conceptoField;
+    [XmlAttribute]
+    public string Concepto { get; set; }
 
-    private decimal importeGravadoField;
+    [XmlAttribute]
+    public decimal ImporteGravado { get; set; }
 
-    private decimal importeExentoField;
-
-    public NominaPercepcionesPercepcionAccionesOTitulos AccionesOTitulos
-    {
-        get
-        {
-            return this.accionesOTitulosField;
-        }
-        set
-        {
-            this.accionesOTitulosField = value;
-        }
-    }
-
-    [XmlElementAttribute("HorasExtra")]
-    public NominaPercepcionesPercepcionHorasExtra[] HorasExtra
-    {
-        get
-        {
-            return this.horasExtraField;
-        }
-        set
-        {
-            this.horasExtraField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_TipoPercepcion TipoPercepcion
-    {
-        get
-        {
-            return this.tipoPercepcionField;
-        }
-        set
-        {
-            this.tipoPercepcionField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Clave
-    {
-        get
-        {
-            return this.claveField;
-        }
-        set
-        {
-            this.claveField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Concepto
-    {
-        get
-        {
-            return this.conceptoField;
-        }
-        set
-        {
-            this.conceptoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal ImporteGravado
-    {
-        get
-        {
-            return this.importeGravadoField;
-        }
-        set
-        {
-            this.importeGravadoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal ImporteExento
-    {
-        get
-        {
-            return this.importeExentoField;
-        }
-        set
-        {
-            this.importeExentoField = value;
-        }
-    }
+    [XmlAttribute]
+    public decimal ImporteExento { get; set; }
 }

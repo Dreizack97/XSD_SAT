@@ -2,39 +2,15 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
 public partial class NominaReceptorSubContratacion
 {
-    private string rfcLaboraField;
+    [XmlAttribute]
+    public string RfcLabora { get; set; }
 
-    private decimal porcentajeTiempoField;
-
-    [XmlAttributeAttribute()]
-    public string RfcLabora
-    {
-        get
-        {
-            return this.rfcLaboraField;
-        }
-        set
-        {
-            this.rfcLaboraField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal PorcentajeTiempo
-    {
-        get
-        {
-            return this.porcentajeTiempoField;
-        }
-        set
-        {
-            this.porcentajeTiempoField = value;
-        }
-    }
+    [XmlAttribute]
+    public decimal PorcentajeTiempo { get; set; }
 }

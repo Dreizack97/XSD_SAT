@@ -2,261 +2,57 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
 public partial class ComprobanteConcepto
 {
-    private ComprobanteConceptoImpuestos impuestosField;
+    public ComprobanteConceptoImpuestos Impuestos { get; set; }
+    public ComprobanteConceptoACuentaTerceros ACuentaTerceros { get; set; }
 
-    private ComprobanteConceptoACuentaTerceros aCuentaTercerosField;
+    [XmlElement("InformacionAduanera")]
+    public ComprobanteConceptoInformacionAduanera[] InformacionAduanera { get; set; } = Array.Empty<ComprobanteConceptoInformacionAduanera>();
 
-    private ComprobanteConceptoInformacionAduanera[] informacionAduaneraField;
+    [XmlElement("CuentaPredial")]
+    public ComprobanteConceptoCuentaPredial[] CuentaPredial { get; set; } = Array.Empty<ComprobanteConceptoCuentaPredial>();
 
-    private ComprobanteConceptoCuentaPredial[] cuentaPredialField;
+    public ComprobanteConceptoComplementoConcepto ComplementoConcepto { get; set; }
 
-    private ComprobanteConceptoComplementoConcepto complementoConceptoField;
+    [XmlElement("Parte")]
+    public ComprobanteConceptoParte[] Parte { get; set; } = Array.Empty<ComprobanteConceptoParte>();
 
-    private ComprobanteConceptoParte[] parteField;
+    [XmlAttribute]
+    public c_ClaveProdServ ClaveProdServ { get; set; }
 
-    private c_ClaveProdServ claveProdServField;
+    [XmlAttribute]
+    public string NoIdentificacion { get; set; } = string.Empty;
 
-    private string noIdentificacionField;
+    [XmlAttribute]
+    public decimal Cantidad { get; set; }
 
-    private decimal cantidadField;
+    [XmlAttribute]
+    public c_ClaveUnidad ClaveUnidad { get; set; }
 
-    private c_ClaveUnidad claveUnidadField;
+    [XmlAttribute]
+    public string Unidad { get; set; } = string.Empty;
 
-    private string unidadField;
+    [XmlAttribute]
+    public string Descripcion { get; set; } = string.Empty;
 
-    private string descripcionField;
+    [XmlAttribute]
+    public decimal ValorUnitario { get; set; }
 
-    private decimal valorUnitarioField;
+    [XmlAttribute]
+    public decimal Importe { get; set; }
 
-    private decimal importeField;
+    [XmlAttribute]
+    public decimal Descuento { get; set; }
 
-    private decimal descuentoField;
+    [XmlIgnore]
+    public bool DescuentoSpecified { get; set; }
 
-    private bool descuentoFieldSpecified;
-
-    private c_ObjetoImp objetoImpField;
-
-    public ComprobanteConceptoImpuestos Impuestos
-    {
-        get
-        {
-            return this.impuestosField;
-        }
-        set
-        {
-            this.impuestosField = value;
-        }
-    }
-
-    public ComprobanteConceptoACuentaTerceros ACuentaTerceros
-    {
-        get
-        {
-            return this.aCuentaTercerosField;
-        }
-        set
-        {
-            this.aCuentaTercerosField = value;
-        }
-    }
-
-    [XmlElementAttribute("InformacionAduanera")]
-    public ComprobanteConceptoInformacionAduanera[] InformacionAduanera
-    {
-        get
-        {
-            return this.informacionAduaneraField;
-        }
-        set
-        {
-            this.informacionAduaneraField = value;
-        }
-    }
-
-    [XmlElementAttribute("CuentaPredial")]
-    public ComprobanteConceptoCuentaPredial[] CuentaPredial
-    {
-        get
-        {
-            return this.cuentaPredialField;
-        }
-        set
-        {
-            this.cuentaPredialField = value;
-        }
-    }
-
-    public ComprobanteConceptoComplementoConcepto ComplementoConcepto
-    {
-        get
-        {
-            return this.complementoConceptoField;
-        }
-        set
-        {
-            this.complementoConceptoField = value;
-        }
-    }
-
-    [XmlElementAttribute("Parte")]
-    public ComprobanteConceptoParte[] Parte
-    {
-        get
-        {
-            return this.parteField;
-        }
-        set
-        {
-            this.parteField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_ClaveProdServ ClaveProdServ
-    {
-        get
-        {
-            return this.claveProdServField;
-        }
-        set
-        {
-            this.claveProdServField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string NoIdentificacion
-    {
-        get
-        {
-            return this.noIdentificacionField;
-        }
-        set
-        {
-            this.noIdentificacionField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal Cantidad
-    {
-        get
-        {
-            return this.cantidadField;
-        }
-        set
-        {
-            this.cantidadField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_ClaveUnidad ClaveUnidad
-    {
-        get
-        {
-            return this.claveUnidadField;
-        }
-        set
-        {
-            this.claveUnidadField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Unidad
-    {
-        get
-        {
-            return this.unidadField;
-        }
-        set
-        {
-            this.unidadField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Descripcion
-    {
-        get
-        {
-            return this.descripcionField;
-        }
-        set
-        {
-            this.descripcionField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal ValorUnitario
-    {
-        get
-        {
-            return this.valorUnitarioField;
-        }
-        set
-        {
-            this.valorUnitarioField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal Importe
-    {
-        get
-        {
-            return this.importeField;
-        }
-        set
-        {
-            this.importeField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal Descuento
-    {
-        get
-        {
-            return this.descuentoField;
-        }
-        set
-        {
-            this.descuentoField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool DescuentoSpecified
-    {
-        get
-        {
-            return this.descuentoFieldSpecified;
-        }
-        set
-        {
-            this.descuentoFieldSpecified = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_ObjetoImp ObjetoImp
-    {
-        get
-        {
-            return this.objetoImpField;
-        }
-        set
-        {
-            this.objetoImpField = value;
-        }
-    }
+    [XmlAttribute]
+    public c_ObjetoImp ObjetoImp { get; set; }
 }
+

@@ -2,54 +2,18 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
 public partial class NominaEmisorEntidadSNCF
 {
-    private c_OrigenRecurso origenRecursoField;
+    [XmlAttribute]
+    public c_OrigenRecurso OrigenRecurso { get; set; }
 
-    private decimal montoRecursoPropioField;
+    [XmlAttribute]
+    public decimal MontoRecursoPropio { get; set; }
 
-    private bool montoRecursoPropioFieldSpecified;
-
-    [XmlAttributeAttribute()]
-    public c_OrigenRecurso OrigenRecurso
-    {
-        get
-        {
-            return this.origenRecursoField;
-        }
-        set
-        {
-            this.origenRecursoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal MontoRecursoPropio
-    {
-        get
-        {
-            return this.montoRecursoPropioField;
-        }
-        set
-        {
-            this.montoRecursoPropioField = value;
-        }
-    }
-
-    [XmlIgnoreAttribute()]
-    public bool MontoRecursoPropioSpecified
-    {
-        get
-        {
-            return this.montoRecursoPropioFieldSpecified;
-        }
-        set
-        {
-            this.montoRecursoPropioFieldSpecified = value;
-        }
-    }
+    [XmlIgnore]
+    public bool MontoRecursoPropioSpecified { get; set; }
 }

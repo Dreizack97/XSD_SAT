@@ -2,54 +2,18 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
 public partial class NominaOtroPagoCompensacionSaldosAFavor
 {
-    private decimal saldoAFavorField;
+    [XmlAttribute]
+    public decimal SaldoAFavor { get; set; }
 
-    private short añoField;
+    [XmlAttribute]
+    public short Año { get; set; }
 
-    private decimal remanenteSalFavField;
-
-    [XmlAttributeAttribute()]
-    public decimal SaldoAFavor
-    {
-        get
-        {
-            return this.saldoAFavorField;
-        }
-        set
-        {
-            this.saldoAFavorField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public short Año
-    {
-        get
-        {
-            return this.añoField;
-        }
-        set
-        {
-            this.añoField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public decimal RemanenteSalFav
-    {
-        get
-        {
-            return this.remanenteSalFavField;
-        }
-        set
-        {
-            this.remanenteSalFavField = value;
-        }
-    }
+    [XmlAttribute]
+    public decimal RemanenteSalFav { get; set; }
 }

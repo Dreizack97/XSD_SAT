@@ -2,69 +2,21 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[DebuggerStepThroughAttribute()]
-[DesignerCategoryAttribute("code")]
-[XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
+[Serializable()]
+[DebuggerStepThrough()]
+[DesignerCategory("code")]
+[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
 public partial class ComprobanteEmisor
 {
-    private string rfcField;
+    [XmlAttribute]
+    public string Rfc { get; set; }
 
-    private string nombreField;
+    [XmlAttribute]
+    public string Nombre { get; set; }
 
-    private c_RegimenFiscal regimenFiscalField;
+    [XmlAttribute]
+    public c_RegimenFiscal RegimenFiscal { get; set; }
 
-    private string facAtrAdquirenteField;
-
-    [XmlAttributeAttribute()]
-    public string Rfc
-    {
-        get
-        {
-            return this.rfcField;
-        }
-        set
-        {
-            this.rfcField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string Nombre
-    {
-        get
-        {
-            return this.nombreField;
-        }
-        set
-        {
-            this.nombreField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public c_RegimenFiscal RegimenFiscal
-    {
-        get
-        {
-            return this.regimenFiscalField;
-        }
-        set
-        {
-            this.regimenFiscalField = value;
-        }
-    }
-
-    [XmlAttributeAttribute()]
-    public string FacAtrAdquirente
-    {
-        get
-        {
-            return this.facAtrAdquirenteField;
-        }
-        set
-        {
-            this.facAtrAdquirenteField = value;
-        }
-    }
+    [XmlAttribute]
+    public string FacAtrAdquirente { get; set; }
 }

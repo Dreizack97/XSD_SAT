@@ -1,53 +1,53 @@
 ﻿using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[XmlTypeAttribute(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
+[Serializable()]
+[XmlType(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
 public enum c_RegimenFiscal
 {
-    [XmlEnumAttribute("601")]
+    [XmlEnum("601")]
     Item601,
-    [XmlEnumAttribute("603")]
+    [XmlEnum("603")]
     Item603,
-    [XmlEnumAttribute("605")]
+    [XmlEnum("605")]
     Item605,
-    [XmlEnumAttribute("606")]
+    [XmlEnum("606")]
     Item606,
-    [XmlEnumAttribute("607")]
+    [XmlEnum("607")]
     Item607,
-    [XmlEnumAttribute("608")]
+    [XmlEnum("608")]
     Item608,
-    [XmlEnumAttribute("609")]
+    [XmlEnum("609")]
     Item609,
-    [XmlEnumAttribute("610")]
+    [XmlEnum("610")]
     Item610,
-    [XmlEnumAttribute("611")]
+    [XmlEnum("611")]
     Item611,
-    [XmlEnumAttribute("612")]
+    [XmlEnum("612")]
     Item612,
-    [XmlEnumAttribute("614")]
+    [XmlEnum("614")]
     Item614,
-    [XmlEnumAttribute("615")]
+    [XmlEnum("615")]
     Item615,
-    [XmlEnumAttribute("616")]
+    [XmlEnum("616")]
     Item616,
-    [XmlEnumAttribute("620")]
+    [XmlEnum("620")]
     Item620,
-    [XmlEnumAttribute("621")]
+    [XmlEnum("621")]
     Item621,
-    [XmlEnumAttribute("622")]
+    [XmlEnum("622")]
     Item622,
-    [XmlEnumAttribute("623")]
+    [XmlEnum("623")]
     Item623,
-    [XmlEnumAttribute("624")]
+    [XmlEnum("624")]
     Item624,
-    [XmlEnumAttribute("625")]
+    [XmlEnum("625")]
     Item625,
-    [XmlEnumAttribute("626")]
+    [XmlEnum("626")]
     Item626,
-    [XmlEnumAttribute("628")]
+    [XmlEnum("628")]
     Item628,
-    [XmlEnumAttribute("629")]
+    [XmlEnum("629")]
     Item629,
-    [XmlEnumAttribute("630")]
+    [XmlEnum("630")]
     Item630,
 }

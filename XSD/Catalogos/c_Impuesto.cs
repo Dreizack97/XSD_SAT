@@ -1,13 +1,13 @@
 ﻿using System.Xml.Serialization;
 
-[SerializableAttribute()]
-[XmlTypeAttribute(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
+[Serializable()]
+[XmlType(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
 public enum c_Impuesto
 {
-    [XmlEnumAttribute("001")]
+    [XmlEnum("001")]
     Item001,
-    [XmlEnumAttribute("002")]
+    [XmlEnum("002")]
     Item002,
-    [XmlEnumAttribute("003")]
+    [XmlEnum("003")]
     Item003,
 }
