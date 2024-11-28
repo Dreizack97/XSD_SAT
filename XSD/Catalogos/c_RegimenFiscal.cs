@@ -1,0 +1,53 @@
+﻿using System.Xml.Serialization;
+
+[SerializableAttribute()]
+[XmlTypeAttribute(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
+public enum c_RegimenFiscal
+{
+    [XmlEnumAttribute("601")]
+    Item601,
+    [XmlEnumAttribute("603")]
+    Item603,
+    [XmlEnumAttribute("605")]
+    Item605,
+    [XmlEnumAttribute("606")]
+    Item606,
+    [XmlEnumAttribute("607")]
+    Item607,
+    [XmlEnumAttribute("608")]
+    Item608,
+    [XmlEnumAttribute("609")]
+    Item609,
+    [XmlEnumAttribute("610")]
+    Item610,
+    [XmlEnumAttribute("611")]
+    Item611,
+    [XmlEnumAttribute("612")]
+    Item612,
+    [XmlEnumAttribute("614")]
+    Item614,
+    [XmlEnumAttribute("615")]
+    Item615,
+    [XmlEnumAttribute("616")]
+    Item616,
+    [XmlEnumAttribute("620")]
+    Item620,
+    [XmlEnumAttribute("621")]
+    Item621,
+    [XmlEnumAttribute("622")]
+    Item622,
+    [XmlEnumAttribute("623")]
+    Item623,
+    [XmlEnumAttribute("624")]
+    Item624,
+    [XmlEnumAttribute("625")]
+    Item625,
+    [XmlEnumAttribute("626")]
+    Item626,
+    [XmlEnumAttribute("628")]
+    Item628,
+    [XmlEnumAttribute("629")]
+    Item629,
+    [XmlEnumAttribute("630")]
+    Item630,
+}

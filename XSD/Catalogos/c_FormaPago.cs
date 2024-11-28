@@ -1,0 +1,51 @@
+﻿using System.Xml.Serialization;
+
+[SerializableAttribute()]
+[XmlTypeAttribute(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
+public enum c_FormaPago
+{
+    [XmlEnumAttribute("01")]
+    Item01,
+    [XmlEnumAttribute("02")]
+    Item02,
+    [XmlEnumAttribute("03")]
+    Item03,
+    [XmlEnumAttribute("04")]
+    Item04,
+    [XmlEnumAttribute("05")]
+    Item05,
+    [XmlEnumAttribute("06")]
+    Item06,
+    [XmlEnumAttribute("08")]
+    Item08,
+    [XmlEnumAttribute("12")]
+    Item12,
+    [XmlEnumAttribute("13")]
+    Item13,
+    [XmlEnumAttribute("14")]
+    Item14,
+    [XmlEnumAttribute("15")]
+    Item15,
+    [XmlEnumAttribute("17")]
+    Item17,
+    [XmlEnumAttribute("23")]
+    Item23,
+    [XmlEnumAttribute("24")]
+    Item24,
+    [XmlEnumAttribute("25")]
+    Item25,
+    [XmlEnumAttribute("26")]
+    Item26,
+    [XmlEnumAttribute("27")]
+    Item27,
+    [XmlEnumAttribute("28")]
+    Item28,
+    [XmlEnumAttribute("29")]
+    Item29,
+    [XmlEnumAttribute("30")]
+    Item30,
+    [XmlEnumAttribute("31")]
+    Item31,
+    [XmlEnumAttribute("99")]
+    Item99,
+}
