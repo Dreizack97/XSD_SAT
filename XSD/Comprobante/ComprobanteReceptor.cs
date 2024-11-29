@@ -18,7 +18,7 @@ public partial class ComprobanteReceptor
     public string DomicilioFiscalReceptor { get; set; }
 
     [XmlAttribute]
-    public c_Pais ResidenciaFiscal { get; set; }
+    public string ResidenciaFiscal { get; set; }
 
     [XmlIgnore]
     public bool ResidenciaFiscalSpecified { get; set; }
@@ -27,8 +27,8 @@ public partial class ComprobanteReceptor
     public string NumRegIdTrib { get; set; }
 
     [XmlAttribute]
-    public c_RegimenFiscal RegimenFiscalReceptor { get; set; }
+    public int RegimenFiscalReceptor { get; set; }
 
     [XmlAttribute]
-    public c_UsoCFDI UsoCFDI { get; set; }
+    public string UsoCFDI { get; set; }
 }

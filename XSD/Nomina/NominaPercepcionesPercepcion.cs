@@ -14,7 +14,7 @@ public partial class NominaPercepcionesPercepcion
     public NominaPercepcionesPercepcionHorasExtra[] HorasExtra { get; set; }
 
     [XmlAttribute]
-    public c_TipoPercepcion TipoPercepcion { get; set; }
+    public string TipoPercepcion { get; set; }
 
     [XmlAttribute]
     public string Clave { get; set; }

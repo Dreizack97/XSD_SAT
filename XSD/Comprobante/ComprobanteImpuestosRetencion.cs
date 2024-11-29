@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 public partial class ComprobanteImpuestosRetencion
 {
     [XmlAttribute]
-    public c_Impuesto Impuesto { get; set; }
+    public string Impuesto { get; set; }
 
     [XmlAttribute]
     public decimal Importe { get; set; }

@@ -23,7 +23,7 @@ public partial class ComprobanteConcepto
     public ComprobanteConceptoParte[] Parte { get; set; } = Array.Empty<ComprobanteConceptoParte>();
 
     [XmlAttribute]
-    public c_ClaveProdServ ClaveProdServ { get; set; }
+    public string ClaveProdServ { get; set; }
 
     [XmlAttribute]
     public string NoIdentificacion { get; set; } = string.Empty;
@@ -32,7 +32,7 @@ public partial class ComprobanteConcepto
     public decimal Cantidad { get; set; }
 
     [XmlAttribute]
-    public c_ClaveUnidad ClaveUnidad { get; set; }
+    public string ClaveUnidad { get; set; }
 
     [XmlAttribute]
     public string Unidad { get; set; } = string.Empty;
@@ -53,6 +53,6 @@ public partial class ComprobanteConcepto
     public bool DescuentoSpecified { get; set; }
 
     [XmlAttribute]
-    public c_ObjetoImp ObjetoImp { get; set; }
+    public string ObjetoImp { get; set; }
 }
 

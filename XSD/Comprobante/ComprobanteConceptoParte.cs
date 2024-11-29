@@ -12,7 +12,7 @@ public partial class ComprobanteConceptoParte
     public ComprobanteConceptoParteInformacionAduanera[] InformacionAduanera { get; set; }
 
     [XmlAttribute]
-    public c_ClaveProdServ ClaveProdServ { get; set; }
+    public string ClaveProdServ { get; set; }
 
     [XmlAttribute]
     public string NoIdentificacion { get; set; }

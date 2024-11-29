@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 public partial class NominaDeduccionesDeduccion
 {
     [XmlAttribute]
-    public c_TipoDeduccion TipoDeduccion { get; set; }
+    public string TipoDeduccion { get; set; }
 
     [XmlAttribute]
     public string Clave { get; set; }

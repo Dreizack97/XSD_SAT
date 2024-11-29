@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 public partial class NominaEmisorEntidadSNCF
 {
     [XmlAttribute]
-    public c_OrigenRecurso OrigenRecurso { get; set; }
+    public string OrigenRecurso { get; set; }
 
     [XmlAttribute]
     public decimal MontoRecursoPropio { get; set; }

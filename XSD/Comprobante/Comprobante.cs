@@ -40,7 +40,7 @@ public partial class Comprobante
     public string Sello { get; set; } = string.Empty;
 
     [XmlAttribute]
-    public c_FormaPago FormaPago { get; set; }
+    public string FormaPago { get; set; }
 
     [XmlIgnore]
     public bool FormaPagoSpecified { get; set; }
@@ -64,7 +64,7 @@ public partial class Comprobante
     public bool DescuentoSpecified { get; set; }
 
     [XmlAttribute]
-    public c_Moneda Moneda { get; set; }
+    public string Moneda { get; set; }
 
     [XmlAttribute]
     public decimal TipoCambio { get; set; }
@@ -76,19 +76,19 @@ public partial class Comprobante
     public decimal Total { get; set; }
 
     [XmlAttribute]
-    public c_TipoDeComprobante TipoDeComprobante { get; set; }
+    public string TipoDeComprobante { get; set; }
 
     [XmlAttribute]
-    public c_Exportacion Exportacion { get; set; }
+    public string Exportacion { get; set; }
 
     [XmlAttribute]
-    public c_MetodoPago MetodoPago { get; set; }
+    public string MetodoPago { get; set; }
 
     [XmlIgnore]
     public bool MetodoPagoSpecified { get; set; }
 
     [XmlAttribute]
-    public c_CodigoPostal LugarExpedicion { get; set; }
+    public int LugarExpedicion { get; set; }
 
     [XmlAttribute]
     public string Confirmacion { get; set; } = string.Empty;

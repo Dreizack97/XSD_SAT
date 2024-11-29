@@ -27,7 +27,7 @@ public partial class NominaReceptor
     public string Antigüedad { get; set; }
 
     [XmlAttribute]
-    public c_TipoContrato TipoContrato { get; set; }
+    public string TipoContrato { get; set; }
 
     [XmlAttribute]
     public NominaReceptorSindicalizado Sindicalizado { get; set; }
@@ -36,13 +36,13 @@ public partial class NominaReceptor
     public bool SindicalizadoSpecified { get; set; }
 
     [XmlAttribute]
-    public c_TipoJornada TipoJornada { get; set; }
+    public string TipoJornada { get; set; }
 
     [XmlIgnore]
     public bool TipoJornadaSpecified { get; set; }
 
     [XmlAttribute]
-    public c_TipoRegimen TipoRegimen { get; set; }
+    public string TipoRegimen { get; set; }
 
     [XmlAttribute]
     public string NumEmpleado { get; set; }
@@ -54,16 +54,16 @@ public partial class NominaReceptor
     public string Puesto { get; set; }
 
     [XmlAttribute]
-    public c_RiesgoPuesto RiesgoPuesto { get; set; }
+    public string RiesgoPuesto { get; set; }
 
     [XmlIgnore]
     public bool RiesgoPuestoSpecified { get; set; }
 
     [XmlAttribute]
-    public c_PeriodicidadPago PeriodicidadPago { get; set; }
+    public string PeriodicidadPago { get; set; }
 
     [XmlAttribute]
-    public c_Banco Banco { get; set; }
+    public string Banco { get; set; }
 
     [XmlIgnore]
     public bool BancoSpecified { get; set; }
@@ -84,5 +84,5 @@ public partial class NominaReceptor
     public bool SalarioDiarioIntegradoSpecified { get; set; }
 
     [XmlAttribute]
-    public c_Estado ClaveEntFed { get; set; }
+    public string ClaveEntFed { get; set; }
 }

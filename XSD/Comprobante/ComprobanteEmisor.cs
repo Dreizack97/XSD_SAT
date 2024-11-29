@@ -15,7 +15,7 @@ public partial class ComprobanteEmisor
     public string Nombre { get; set; }
 
     [XmlAttribute]
-    public c_RegimenFiscal RegimenFiscal { get; set; }
+    public int RegimenFiscal { get; set; }
 
     [XmlAttribute]
     public string FacAtrAdquirente { get; set; }

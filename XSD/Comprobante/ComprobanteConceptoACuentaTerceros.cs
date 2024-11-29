@@ -16,7 +16,7 @@ public partial class ComprobanteConceptoACuentaTerceros
     public string NombreACuentaTerceros { get; set; } = string.Empty;
 
     [XmlAttribute]
-    public c_RegimenFiscal RegimenFiscalACuentaTerceros { get; set; }
+    public int RegimenFiscalACuentaTerceros { get; set; }
 
     [XmlAttribute]
     public string DomicilioFiscalACuentaTerceros { get; set; } = string.Empty;

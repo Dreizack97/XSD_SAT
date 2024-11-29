@@ -12,7 +12,7 @@ public partial class NominaIncapacidad
     public int DiasIncapacidad { get; set; }
 
     [XmlAttribute]
-    public c_TipoIncapacidad TipoIncapacidad { get; set; }
+    public string TipoIncapacidad { get; set; }
 
     [XmlAttribute]
     public decimal ImporteMonetario { get; set; }

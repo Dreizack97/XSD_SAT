@@ -9,10 +9,10 @@ using System.Xml.Serialization;
 public partial class ComprobanteInformacionGlobal
 {
     [XmlAttribute]
-    public c_Periodicidad Periodicidad { get; set; }
+    public string Periodicidad { get; set; }
 
     [XmlAttribute]
-    public c_Meses Meses { get; set; }
+    public string Meses { get; set; }
 
     [XmlAttribute]
     public short Año { get; set; }

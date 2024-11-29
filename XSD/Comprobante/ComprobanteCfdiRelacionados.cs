@@ -12,5 +12,5 @@ public partial class ComprobanteCfdiRelacionados
     public ComprobanteCfdiRelacionadosCfdiRelacionado[] CfdiRelacionado { get; set; } = Array.Empty<ComprobanteCfdiRelacionadosCfdiRelacionado>();
 
     [XmlAttribute]
-    public c_TipoRelacion TipoRelacion { get; set; }
+    public string TipoRelacion { get; set; }
 }

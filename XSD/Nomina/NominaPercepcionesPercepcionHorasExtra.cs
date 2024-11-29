@@ -12,7 +12,7 @@ public partial class NominaPercepcionesPercepcionHorasExtra
     public int Dias { get; set; }
 
     [XmlAttribute]
-    public c_TipoHoras TipoHoras { get; set; }
+    public string TipoHoras { get; set; }
 
     [XmlAttribute]
     public int HorasExtra { get; set; }

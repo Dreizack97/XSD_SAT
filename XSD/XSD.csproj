@@ -4,4 +4,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Catalogos\**" />
+    <EmbeddedResource Remove="Catalogos\**" />
+    <None Remove="Catalogos\**" />
+  </ItemGroup>
 </Project>

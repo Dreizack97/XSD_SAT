@@ -13,7 +13,7 @@ public partial class NominaOtroPago
     public NominaOtroPagoCompensacionSaldosAFavor CompensacionSaldosAFavor { get; set; }
 
     [XmlAttribute]
-    public c_TipoOtroPago TipoOtroPago { get; set; }
+    public string TipoOtroPago { get; set; }
 
     [XmlAttribute]
     public string Clave { get; set; }

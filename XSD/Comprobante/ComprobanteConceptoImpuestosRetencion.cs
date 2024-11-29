@@ -12,10 +12,10 @@ public partial class ComprobanteConceptoImpuestosRetencion
     public decimal Base { get; set; }
 
     [XmlAttribute]
-    public c_Impuesto Impuesto { get; set; }
+    public string Impuesto { get; set; }
 
     [XmlAttribute]
-    public c_TipoFactor TipoFactor { get; set; }
+    public string TipoFactor { get; set; }
 
     [XmlAttribute]
     public decimal TasaOCuota { get; set; }

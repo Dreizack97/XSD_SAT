@@ -9,5 +9,5 @@ using System.Xml.Serialization;
 public partial class ComprobanteConceptoParteInformacionAduanera
 {
     [XmlAttribute()]
-    public string NumeroPedimento {  get; set; }
+    public string NumeroPedimento { get; set; }
 }

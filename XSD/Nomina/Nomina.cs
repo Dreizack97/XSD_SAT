@@ -29,7 +29,7 @@ public partial class Nomina
     public string Version { get; set; }
 
     [XmlAttribute]
-    public c_TipoNomina TipoNomina { get; set; }
+    public string TipoNomina { get; set; }
 
     [XmlAttribute(DataType = "date")]
     public DateTime FechaPago { get; set; }
