@@ -2,15 +2,18 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[Serializable()]
-[DebuggerStepThrough()]
-[DesignerCategory("code")]
-[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
-public partial class NominaPercepcionesPercepcionAccionesOTitulos
+namespace XSD.Nomina
 {
-    [XmlAttribute]
-    public decimal ValorMercado { get; set; }
+    [Serializable()]
+    [DebuggerStepThrough()]
+    [DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+    public partial class NominaPercepcionesPercepcionAccionesOTitulos
+    {
+        [XmlAttribute]
+        public decimal ValorMercado { get; set; }
 
-    [XmlAttribute]
-    public decimal PrecioAlOtorgarse { get; set; }
+        [XmlAttribute]
+        public decimal PrecioAlOtorgarse { get; set; }
+    }
 }

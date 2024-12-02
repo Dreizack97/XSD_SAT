@@ -2,12 +2,15 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[Serializable()]
-[DebuggerStepThrough()]
-[DesignerCategory("code")]
-[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
-public partial class ComprobanteConceptoParteInformacionAduanera
+namespace XSD.Comprobante
 {
-    [XmlAttribute()]
-    public string NumeroPedimento { get; set; }
+    [Serializable()]
+    [DebuggerStepThrough()]
+    [DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
+    public partial class ComprobanteConceptoParteInformacionAduanera
+    {
+        [XmlAttribute()]
+        public string NumeroPedimento { get; set; }
+    }
 }

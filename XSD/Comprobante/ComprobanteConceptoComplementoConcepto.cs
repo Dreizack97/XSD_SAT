@@ -3,12 +3,15 @@ using System.Diagnostics;
 using System.Xml;
 using System.Xml.Serialization;
 
-[Serializable()]
-[DebuggerStepThrough()]
-[DesignerCategory("code")]
-[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
-public partial class ComprobanteConceptoComplementoConcepto
+namespace XSD.Comprobante
 {
-    [XmlAnyElement]
-    public XmlElement[] Any { get; set; } = Array.Empty<XmlElement>();
+    [Serializable()]
+    [DebuggerStepThrough()]
+    [DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
+    public partial class ComprobanteConceptoComplementoConcepto
+    {
+        [XmlAnyElement]
+        public XmlElement[] Any { get; set; } = Array.Empty<XmlElement>();
+    }
 }

@@ -2,29 +2,32 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[Serializable()]
-[DebuggerStepThrough()]
-[DesignerCategory("code")]
-[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
-public partial class NominaPercepcionesPercepcion
+namespace XSD.Nomina
 {
-    public NominaPercepcionesPercepcionAccionesOTitulos AccionesOTitulos { get; set; }
+    [Serializable()]
+    [DebuggerStepThrough()]
+    [DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+    public partial class NominaPercepcionesPercepcion
+    {
+        public NominaPercepcionesPercepcionAccionesOTitulos AccionesOTitulos { get; set; }
 
-    [XmlElement("HorasExtra")]
-    public NominaPercepcionesPercepcionHorasExtra[] HorasExtra { get; set; }
+        [XmlElement("HorasExtra")]
+        public NominaPercepcionesPercepcionHorasExtra[] HorasExtra { get; set; }
 
-    [XmlAttribute]
-    public string TipoPercepcion { get; set; }
+        [XmlAttribute]
+        public string TipoPercepcion { get; set; }
 
-    [XmlAttribute]
-    public string Clave { get; set; }
+        [XmlAttribute]
+        public string Clave { get; set; }
 
-    [XmlAttribute]
-    public string Concepto { get; set; }
+        [XmlAttribute]
+        public string Concepto { get; set; }
 
-    [XmlAttribute]
-    public decimal ImporteGravado { get; set; }
+        [XmlAttribute]
+        public decimal ImporteGravado { get; set; }
 
-    [XmlAttribute]
-    public decimal ImporteExento { get; set; }
+        [XmlAttribute]
+        public decimal ImporteExento { get; set; }
+    }
 }

@@ -2,12 +2,15 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[Serializable()]
-[DebuggerStepThrough()]
-[DesignerCategory("code")]
-[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
-public partial class NominaOtroPagoSubsidioAlEmpleo
+namespace XSD.Nomina
 {
-    [XmlAttribute]
-    public decimal SubsidioCausado { get; set; }
+    [Serializable()]
+    [DebuggerStepThrough()]
+    [DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+    public partial class NominaOtroPagoSubsidioAlEmpleo
+    {
+        [XmlAttribute]
+        public decimal SubsidioCausado { get; set; }
+    }
 }

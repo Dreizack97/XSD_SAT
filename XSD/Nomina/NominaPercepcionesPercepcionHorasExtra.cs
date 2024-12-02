@@ -2,21 +2,24 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[Serializable()]
-[DebuggerStepThrough()]
-[DesignerCategory("code")]
-[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
-public partial class NominaPercepcionesPercepcionHorasExtra
+namespace XSD.Nomina
 {
-    [XmlAttribute]
-    public int Dias { get; set; }
+    [Serializable()]
+    [DebuggerStepThrough()]
+    [DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
+    public partial class NominaPercepcionesPercepcionHorasExtra
+    {
+        [XmlAttribute]
+        public int Dias { get; set; }
 
-    [XmlAttribute]
-    public string TipoHoras { get; set; }
+        [XmlAttribute]
+        public string TipoHoras { get; set; }
 
-    [XmlAttribute]
-    public int HorasExtra { get; set; }
+        [XmlAttribute]
+        public int HorasExtra { get; set; }
 
-    [XmlAttribute]
-    public decimal ImportePagado { get; set; }
+        [XmlAttribute]
+        public decimal ImportePagado { get; set; }
+    }
 }

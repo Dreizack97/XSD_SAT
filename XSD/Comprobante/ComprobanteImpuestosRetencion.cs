@@ -2,15 +2,18 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[Serializable()]
-[DebuggerStepThrough()]
-[DesignerCategory("code")]
-[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
-public partial class ComprobanteImpuestosRetencion
+namespace XSD.Comprobante
 {
-    [XmlAttribute]
-    public string Impuesto { get; set; }
+    [Serializable()]
+    [DebuggerStepThrough()]
+    [DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
+    public partial class ComprobanteImpuestosRetencion
+    {
+        [XmlAttribute]
+        public string Impuesto { get; set; }
 
-    [XmlAttribute]
-    public decimal Importe { get; set; }
+        [XmlAttribute]
+        public decimal Importe { get; set; }
+    }
 }

@@ -2,12 +2,16 @@
 using System.Diagnostics;
 using System.Xml.Serialization;
 
-[Serializable()]
-[DebuggerStepThrough()]
-[DesignerCategory("code")]
-[XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
-public partial class ComprobanteCfdiRelacionadosCfdiRelacionado
+namespace XSD.Comprobante
 {
-    [XmlAttribute]
-    public string UUID { get; set; } = string.Empty;
+    [Serializable()]
+    [DebuggerStepThrough()]
+    [DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/cfd/4")]
+    public partial class ComprobanteCfdiRelacionadosCfdiRelacionado
+    {
+        [XmlAttribute]
+        public string UUID { get; set; } = string.Empty;
+    }
+
 }

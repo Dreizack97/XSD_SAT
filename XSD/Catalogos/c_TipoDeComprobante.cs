@@ -1,12 +1,15 @@
 ﻿using System.Xml.Serialization;
 
-[Serializable()]
-[XmlType(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
-public enum c_TipoDeComprobante
+namespace XSD.Catalogos
 {
-    I,
-    E,
-    T,
-    N,
-    P,
+    [Serializable()]
+    [XmlType(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
+    public enum c_TipoDeComprobante
+    {
+        I,
+        E,
+        T,
+        N,
+        P,
+    }
 }

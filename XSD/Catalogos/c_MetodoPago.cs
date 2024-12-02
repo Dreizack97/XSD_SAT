@@ -1,9 +1,12 @@
 ﻿using System.Xml.Serialization;
 
-[Serializable()]
-[XmlType(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
-public enum c_MetodoPago
+namespace XSD.Catalogos
 {
-    PUE,
-    PPD,
+    [Serializable()]
+    [XmlType(Namespace = "http://www.sat.gob.mx/sitio_internet/cfd/catalogos")]
+    public enum c_MetodoPago
+    {
+        PUE,
+        PPD,
+    }
 }
