@@ -30,6 +30,8 @@ namespace XSD.Comprobante
 
         public ComprobanteAddenda Addenda { get; set; }
 
+        public Nomina.Nomina Nomina { get; set; }
+
         public TimbreFiscalDigital TimbreFiscalDigital { get; set; }
 
         [XmlAttribute]
