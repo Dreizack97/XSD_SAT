@@ -4,8 +4,8 @@ using System.Xml.Serialization;
 
 namespace XSD.Nomina
 {
-    [Serializable()]
-    [DebuggerStepThrough()]
+    [Serializable]
+    [DebuggerStepThrough]
     [DesignerCategory("code")]
     [XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
     public partial class NominaOtroPago

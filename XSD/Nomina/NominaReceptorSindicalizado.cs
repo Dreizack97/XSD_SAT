@@ -2,7 +2,7 @@
 
 namespace XSD.Nomina
 {
-    [Serializable()]
+    [Serializable]
     [XmlType(AnonymousType = true, Namespace = "http://www.sat.gob.mx/nomina12")]
     public enum NominaReceptorSindicalizado
     {

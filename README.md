@@ -3,6 +3,8 @@
 
 Este proyecto tiene como objetivo convertir archivos XSD en clases de C# para facilitar la lectura y manipulación de archivos XML asociados a diferentes conceptos fiscales y nómina. Las clases generadas a partir de los XSD son útiles para la validación, generación y procesamiento de XMLs conforme a las normativas fiscales y laborales en México.
 
+**Compatibilidad con versión 3.3 y 4.0**
+
 ## Estructura del Proyecto
 
 La estructura del proyecto está organizada en diferentes carpetas y archivos, los cuales están relacionados con dos áreas principales:
@@ -20,42 +22,67 @@ XSD
 │   └── TimbreFiscalDigital11.cs
 │
 ├── Comprobante
-│    ├── Comprobante.cs
-│    ├── ComprobanteAddenda.cs
-│    ├── ComprobanteCdfiRelacionados.cs
-│    ├── ComprobanteCdfiRelacionadosCdfiRelacionados.cs
-│    ├── ComprobanteComplemento.cs
-│    ├── ComprobanteConcepto.cs
-│    ├── ComprobanteConceptoACuentaTerceros.cs
-│    ├── ComprobanteConceptoComplementoConcepto.cs
-│    ├── ComprobanteConceptoCuentaPredial.cs
-│    ├── ComprobanteConceptoImpuestos.cs
-│    ├── ComprobanteConceptoImpuestosRetencion.cs
-│    ├── ComprobanteConceptoImpuestosTraslado.cs
-│    ├── ComprobanteConceptoInformacionAduanera.cs
-│    ├── ComprobanteConceptoParte.cs
-│    ├── ComprobanteConceptoParteInformacionAduanera.cs
-│    ├── ComprobanteEmisor.cs
-│    ├── ComprobanteImpuestosRetencion.cs
-│    ├── ComprobanteImpuestosTraslado.cs
-│    ├── ComprobanteInformacionGlobal.cs
-│    ├── ComprobanteReceptor.cs
+│   └── V33
+│     ├── Comprobante.cs
+│     ├── ComprobanteAddenda.cs
+│     ├── ComprobanteCdfiRelacionados.cs
+│     ├── ComprobanteCdfiRelacionadosCdfiRelacionados.cs
+│     ├── ComprobanteComplemento.cs
+│     ├── ComprobanteConcepto.cs
+│     ├── ComprobanteConceptoComplementoConcepto.cs
+│     ├── ComprobanteConceptoCuentaPredial.cs
+│     ├── ComprobanteConceptoImpuestos.cs
+│     ├── ComprobanteConceptoImpuestosRetencion.cs
+│     ├── ComprobanteConceptoImpuestosTraslado.cs
+│     ├── ComprobanteConceptoInformacionAduanera.cs
+│     ├── ComprobanteConceptoParte.cs
+│     ├── ComprobanteConceptoParteInformacionAduanera.cs
+│     ├── ComprobanteEmisor.cs
+│     ├── ComprobanteImpuestos.cs
+│     ├── ComprobanteImpuestosRetencion.cs
+│     ├── ComprobanteImpuestosTraslado.cs
+│     └── ComprobanteReceptor.cs
+│   └── V40
+│     ├── Comprobante.cs
+│     ├── ComprobanteAddenda.cs
+│     ├── ComprobanteCdfiRelacionados.cs
+│     ├── ComprobanteCdfiRelacionadosCdfiRelacionados.cs
+│     ├── ComprobanteComplemento.cs
+│     ├── ComprobanteConcepto.cs
+│     ├── ComprobanteConceptoACuentaTerceros.cs
+│     ├── ComprobanteConceptoComplementoConcepto.cs
+│     ├── ComprobanteConceptoCuentaPredial.cs
+│     ├── ComprobanteConceptoImpuestos.cs
+│     ├── ComprobanteConceptoImpuestosRetencion.cs
+│     ├── ComprobanteConceptoImpuestosTraslado.cs
+│     ├── ComprobanteConceptoInformacionAduanera.cs
+│     ├── ComprobanteConceptoParte.cs
+│     ├── ComprobanteConceptoParteInformacionAduanera.cs
+│     ├── ComprobanteEmisor.cs
+│     ├── ComprobanteImpuestos.cs
+│     ├── ComprobanteImpuestosRetencion.cs
+│     ├── ComprobanteImpuestosTraslado.cs
+│     ├── ComprobanteInformacionGlobal.cs
+│     └── ComprobanteReceptor.cs
 ├── Nomina
-│    ├── Comprobante.cs
 │    ├── Nomina.cs
 │    ├── NominaDeducciones.cs
-│    ├── NominaDeduccionesDeduction.cs
+│    ├── NominaDeduccionesDeduccion.cs
 │    ├── NominaEmisor.cs
 │    ├── NominaEmisorEntidadSNFC.cs
-│    ├── NominaCapacidad.cs
+│    ├── NominaIncapacidad.cs
 │    ├── NominaOtroPago.cs
 │    ├── NominaOtroPagoCompensacionSaldosAFavor.cs
-│    ├── NominaOtroPagoSubsidioGAEmpleo.cs
+│    ├── NominaOtroPagoSubsidioAlEmpleo.cs
 │    ├── NominaPercepciones.cs
+│    ├── NominaPercepcionesJubilacionPensionRetiro.cs
 │    ├── NominaPercepcionesPercepcion.cs
-│    ├── NominaPercepcionesPercepcionPensionRetiro.cs
-│    ├── NominaPercepcionesPercepcionAccionesOtorgadas.cs
-│    └── NominaPercepcionesPercepcionHorasExtra.cs
+│    ├── NominaPercepcionesPercepcionAccionesOTitulos.cs
+│    ├── NominaPercepcionesPercepcionHorasExtra.cs
+│    ├── NominaPercepcionesPercepcionSeparacionIndemnizacion.cs
+│    ├── NominaPercepcionesReceptor.cs
+│    ├── NominaPercepcionesReceptorSindicalizado.cs
+│    └── NominaPercepcionesReceptorSubContratacion.cs
 ```
 
 ## Uso
@@ -65,10 +92,14 @@ Este proyecto proporciona clases generadas a partir de XSDs que pueden ser utili
 - **Generación de XML conforme a las normativas fiscales y laborales.**
 - **Validación de archivos XML de acuerdo con los esquemas XSD.**
 - **Procesamiento de datos fiscales y de nómina de manera estructurada y eficiente.**
+- **Creación de PDF's a partir de CFDI's de nómina.**
 
 ## Requisitos
 
 - .NET Core o .NET Framework.
+- iText7
+- iText7.bouncy-castle-adapter
+- QRCoder
 - Conocimiento básico sobre XML, XSD y CFDI.
 
 ## Instalación
