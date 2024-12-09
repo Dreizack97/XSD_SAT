@@ -22,48 +22,48 @@ XSD
 │   └── TimbreFiscalDigital11.cs
 │
 ├── Comprobante
-│   └── V33
-│     ├── Comprobante.cs
-│     ├── ComprobanteAddenda.cs
-│     ├── ComprobanteCdfiRelacionados.cs
-│     ├── ComprobanteCdfiRelacionadosCdfiRelacionados.cs
-│     ├── ComprobanteComplemento.cs
-│     ├── ComprobanteConcepto.cs
-│     ├── ComprobanteConceptoComplementoConcepto.cs
-│     ├── ComprobanteConceptoCuentaPredial.cs
-│     ├── ComprobanteConceptoImpuestos.cs
-│     ├── ComprobanteConceptoImpuestosRetencion.cs
-│     ├── ComprobanteConceptoImpuestosTraslado.cs
-│     ├── ComprobanteConceptoInformacionAduanera.cs
-│     ├── ComprobanteConceptoParte.cs
-│     ├── ComprobanteConceptoParteInformacionAduanera.cs
-│     ├── ComprobanteEmisor.cs
-│     ├── ComprobanteImpuestos.cs
-│     ├── ComprobanteImpuestosRetencion.cs
-│     ├── ComprobanteImpuestosTraslado.cs
-│     └── ComprobanteReceptor.cs
-│   └── V40
-│     ├── Comprobante.cs
-│     ├── ComprobanteAddenda.cs
-│     ├── ComprobanteCdfiRelacionados.cs
-│     ├── ComprobanteCdfiRelacionadosCdfiRelacionados.cs
-│     ├── ComprobanteComplemento.cs
-│     ├── ComprobanteConcepto.cs
-│     ├── ComprobanteConceptoACuentaTerceros.cs
-│     ├── ComprobanteConceptoComplementoConcepto.cs
-│     ├── ComprobanteConceptoCuentaPredial.cs
-│     ├── ComprobanteConceptoImpuestos.cs
-│     ├── ComprobanteConceptoImpuestosRetencion.cs
-│     ├── ComprobanteConceptoImpuestosTraslado.cs
-│     ├── ComprobanteConceptoInformacionAduanera.cs
-│     ├── ComprobanteConceptoParte.cs
-│     ├── ComprobanteConceptoParteInformacionAduanera.cs
-│     ├── ComprobanteEmisor.cs
-│     ├── ComprobanteImpuestos.cs
-│     ├── ComprobanteImpuestosRetencion.cs
-│     ├── ComprobanteImpuestosTraslado.cs
-│     ├── ComprobanteInformacionGlobal.cs
-│     └── ComprobanteReceptor.cs
+│   ├── V33
+│   │  ├── Comprobante.cs
+│   │  ├── ComprobanteAddenda.cs
+│   │  ├── ComprobanteCdfiRelacionados.cs
+│   │  ├── ComprobanteCdfiRelacionadosCdfiRelacionados.cs
+│   │  ├── ComprobanteComplemento.cs
+│   │  ├── ComprobanteConcepto.cs
+│   │  ├── ComprobanteConceptoComplementoConcepto.cs
+│   │  ├── ComprobanteConceptoCuentaPredial.cs
+│   │  ├── ComprobanteConceptoImpuestos.cs
+│   │  ├── ComprobanteConceptoImpuestosRetencion.cs
+│   │  ├── ComprobanteConceptoImpuestosTraslado.cs
+│   │  ├── ComprobanteConceptoInformacionAduanera.cs
+│   │  ├── ComprobanteConceptoParte.cs
+│   │  ├── ComprobanteConceptoParteInformacionAduanera.cs
+│   │  ├── ComprobanteEmisor.cs
+│   │  ├── ComprobanteImpuestos.cs
+│   │  ├── ComprobanteImpuestosRetencion.cs
+│   │  ├── ComprobanteImpuestosTraslado.cs
+│   │  └── ComprobanteReceptor.cs
+│   ├── V40
+│   │  ├── Comprobante.cs
+│   │  ├── ComprobanteAddenda.cs
+│   │  ├── ComprobanteCdfiRelacionados.cs
+│   │  ├── ComprobanteCdfiRelacionadosCdfiRelacionados.cs
+│   │  ├── ComprobanteComplemento.cs
+│   │  ├── ComprobanteConcepto.cs
+│   │  ├── ComprobanteConceptoACuentaTerceros.cs
+│   │  ├── ComprobanteConceptoComplementoConcepto.cs
+│   │  ├── ComprobanteConceptoCuentaPredial.cs
+│   │  ├── ComprobanteConceptoImpuestos.cs
+│   │  ├── ComprobanteConceptoImpuestosRetencion.cs
+│   │  ├── ComprobanteConceptoImpuestosTraslado.cs
+│   │  ├── ComprobanteConceptoInformacionAduanera.cs
+│   │  ├── ComprobanteConceptoParte.cs
+│   │  ├── ComprobanteConceptoParteInformacionAduanera.cs
+│   │  ├── ComprobanteEmisor.cs
+│   │  ├── ComprobanteImpuestos.cs
+│   │  ├── ComprobanteImpuestosRetencion.cs
+│   │  ├── ComprobanteImpuestosTraslado.cs
+│   │  ├── ComprobanteInformacionGlobal.cs
+│   └──└── ComprobanteReceptor.cs
 ├── Nomina
 │    ├── Nomina.cs
 │    ├── NominaDeducciones.cs
